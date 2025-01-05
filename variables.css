@@ -1,0 +1,140 @@
+:root {
+    /* --font-primary: 'Poppins',
+        sans-serif;
+    --font-size-base: 16px; */
+    --Body-Primary-Backgorund: #FFF;
+    --Body-Footer-Backgorund: #2A2A2D;
+
+    --body-nav-background: #FFFFFF;
+    --nav-backgorund: #FFFFFF;
+    --nav-default: #000000;
+    --nav-button-hover-text: #00BB29;
+    --nav-button-focus-text: #00BB29;
+    --nav-button-activ-text: #007D1B;
+    --nav-button-disabled-text: #A9E8B7;
+
+    --Text-Header-primary: #00BB29;
+    --Text-Header-secondary: #000000;
+    --Text-Body-priamary: #FFFFFF;
+    --Text-Body-secondary: #000000;
+    --Text-Body-tertiar: #2900BD;
+
+
+    --Text-Headline-primary: #00BB29;
+    --Text-Headline-secondary: #009C22;
+
+    --icons-color-primary: #000000;
+    --icons-color-secondary: #00BB29;
+    --icons-color-tertiar: #FFFFFF;
+
+    --Button-primary-default: #00BB29;
+    --Button-primary-hover: #009C22;
+    --Button-primary-focus: #009C22;
+    --Button-primary-activ: #007D1B;
+    --Button-primary-disabled: #A9E8B7;
+    --Button-primary-text: #000000;
+    --Button-primary-text-disabled: #00BB29;
+
+    --Button-secondary-outline-default: #00BB29;
+    --Button-secondary-outline-hover: #009C22;
+    --Button-secondary-outline-focus: #009C22;
+    --Button-secondary-outline-activ: #007D1B;
+    --Button-secondary-outline-disabled: #A9E8B7;
+    --Button-secondary-text: #00BB29;
+    --Button-secondary-background:
+        243,
+        219,
+        0.50;
+
+
+    --Link-header-default: #000000;
+    --Link-footer-default: #DEDEDF;
+    --Link-default: #00BB29;
+    --Link-hover: #007D1B;
+    --Link-focus: #007D1B;
+    --Link-activ: #003F0E;
+    --Link-disabled: #7FDD94;
+    --Link-footer-disabled: #7F7F82;
+
+    --Checkboxes-default: #000000;
+    --Checkboxes-hover: #00BB29;
+    --Checkboxes-focus: #00BB29;
+    --Checkboxes-aciv: #009C22;
+    --Checkboxes-disabled: #000000;
+
+    --text-field-default: #000000;
+    --text-field-hover: #00BB29;
+    --text-field-error: #BB2901;
+    --text-field-disabled: #7F7F82;
+
+
+
+
+    /* 
+    --home-hero-background: url(assets/img/backgournd-home-hero.jpg) lightgray 50% / cover no-repeat;
+    --home-about-us-background: url(assets/img/backgournd-home-about-us.jpg) lightgray 50% / cover no-repeat; */
+
+
+    --Text-footer: #DEDEDF;
+    --Body-Footer-Backgorund: #2A2A2D;
+
+    --spacing-025-rem: 4px;
+    --spacing-05-rem: 8px;
+    --spacing-075-rem: 12px;
+    --Spacing-1rem: 16px;
+    --spacing-125-rem: 20px;
+    --spacing-15-rem: 24px;
+    --Spacing-2-rem: 32px;
+    --spacing-25-rem: 40px;
+    --Spacing-3-rem: 48px;
+    --Spacing-4-rem: 64px;
+    --Spacing-5-rem: 80px;
+    --Spacing-6-rem: 96px;
+    --Spacing-8-rem: 128px;
+    --Spacing-10-rem: 160px;
+    --Spacing-12-rem: 192px;
+    --Spacing-14-rem: 224px;
+    --Spacing-16-rem: 256px;
+    --Spacing-18-rem: 288px;
+    --Spacing-20-rem: 320px;
+
+    --width-025-rem: 4px;
+    --width-05-rem: 8px;
+    --width-075-rem: 12px;
+    --width-1rem: 16px;
+    --width-125-rem: 20px;
+    --width-15-rem: 24px;
+    --width-2-rem: 32px;
+    --width-25-rem: 40px;
+    --width-3-rem: 48px;
+    --width-4-rem: 64px;
+    --width-5-rem: 80px;
+    --width-6-rem: 96px;
+    --width-8-rem: 128px;
+    --width-10-rem: 160px;
+    --width-12-rem: 192px;
+    --width-14-rem: 224px;
+    --width-16-rem: 256px;
+    --width-18-rem: 288px;
+    --width-20-rem: 320px;
+
+    --height-025-rem: 4px;
+    --height-05-rem: 8px;
+    --height-075-rem: 12px;
+    --height-1rem: 16px;
+    --height-125-rem: 20px;
+    --height-15-rem: 24px;
+    --height-2-rem: 32px;
+    --height-25-rem: 40px;
+    --height-3-rem: 48px;
+    --height-4-rem: 64px;
+    --height-5-rem: 80px;
+    --height-6-rem: 96px;
+    --height-8-rem: 128px;
+    --height-10-rem: 160px;
+    --height-12-rem: 192px;
+    --height-14-rem: 224px;
+    --height-16-rem: 256px;
+    --height-18-rem: 288px;
+    --height-20-rem: 320px;
+}

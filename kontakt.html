@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Marcin Grabowski">
+    <meta name="keywords" content="---------- słowa kluczowe ------------------">
+    <meta name="description" content=" ----------   opis naszej strony  ------------------">
+    <title>EKSPERT Centrum profilaktyki
+        uzależnień</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/Ekspert-favicon.svg">
+    <link rel="stylesheet" href="variables.css"> <!-- Plik z zmiennymi -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="contact">
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/icon/Ekspert-Centrum-Profilaktyki-Uzależnień.svg"
+                        alt="EkspertCentrumProfilaktykiUzależnień">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a class="nav-button" href="index.html">Strona główna</a>
+                <a class="nav-button" href="onas.html">O nas</a>
+                <div class="dropdown">
+                    <div>
+                        <a class="nav-button" href="">Warsztaty i szkolenia<i
+                                class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a class="nav-button" id="dropdown-button" href="warsztatydlaucziow.html">Warsztaty dla
+                            uczniów</a>
+                        <a class="nav-button" id="dropdown-button" href="szkoleniadlarodzicow.html">Szkolenia dla
+                            rodziców</a>
+                        <a class="nav-button" id="dropdown-button" href="szkoleniadlakadrypedagogicznej.html">Szkolenia
+                            dla kadry
+                            pedagogicznej</a>
+                        <a class="nav-button" id="dropdown-button" href="rekomendowaneprogramy.html">Rekomendowane
+                            programy</a>
+                    </div>
+                </div>
+                <a class="nav-button" href="dzienprofilaktyki.html">Dzień profilaktyki</a>
+                <a class="nav-button active" href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <section class="hero-container">
+                <div class="hero-text-container">
+                    <h4 class="medium header-color-primary">Skontaktuj się z nami</h4>
+                </div>
+                <div class="empty-container"></div>
+            </section>
+        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-card">
+                    <header>
+                        <h6 class="medium header-color-secondary">Informacje kontaktowe</h6>
+                    </header>
+                    <address class="address">
+                        <div id="home-address">
+                            <div>
+                                <i class="material-icons">home</i>
+                            </div>
+                            <p class="text-color-secondary" id="important-icon">
+                                Masarska 13/5<br>31-534 Kraków
+                            </p>
+                        </div>
+                        <p>
+                            <a href="mailto:ekspert.profilaktyka@gmail.com">
+                                <span aria-hidden="true">
+                                    <i class="material-icons">mail</i>
+                                </span>ekspert.profilaktyka@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:ekspert.profilaktyka@gmail.com">
+                                <span aria-hidden="true">
+                                    <i class="material-icons">mail</i>
+                                </span>ekspert.profilaktyka@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+48511117620">
+                                <span aria-hidden="true">
+                                    <i class="material-icons">call</i>
+                                </span>+48 511 117 620
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+48511117620">
+                                <span aria-hidden="true">
+                                    <i class="material-icons">call</i>
+                                </span>+48 511 117 620
+                            </a>
+                        </p>
+                    </address>
+                </div>
+                <main class="main-contact">
+                    <header>
+                        <h6 class="medium header-color-secondary">Kontakt</h6>
+                    </header>
+                    <form id="contactForm" action="send_email.php" method="POST">
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Imię Nazwisko" class="style-input">
+                            <input type="text" id="email" name="email" placeholder="Adres e-mail" class="style-input">
+                        </div>
+                        <div>
+                            <input type="text" id="organization" name="organization" placeholder="Nazwa orgranizacji"
+                                class="style-input">
+                            <input type="text" id="tel" name="phone" placeholder="Numer telefonu" class="style-input">
+                        </div>
+                        <div>
+                            <input type="text" id="subject" name="subject" placeholder="Temat" class="style-input">
+                        </div>
+                        <textarea name="message" id="message" row="auto" placeholder="Podaj treść zapytania"></textarea>
+                        <label class="rodo-consent">
+                            <input type="checkbox" id="rodo-consent" name="rodo-consent" required>
+                            <span class="text-color-secondary">
+                                Wyrażam zgodę na przetwarzanie moich
+                                danych osobowych zgodnie z&nbsp;ustawą o&nbsp;ochronie danych osobowych w&nbsp;celu
+                                przedstawienia
+                                odpowiedzi na wysyłane zapytanie. Więcej informacji znajdziesz w&nbsp;naszej <a
+                                    style="color: #2900BD;"
+                                    href="politykaprywatnosci.html">Polityce&nbsp;prywatności</a>.
+                            </span>
+                        </label>
+                        <button type="submit">Wyślij</button>
+                    </form>
+                </main>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <section class="footer-nav">
+                <div class="nav-container">
+                    <div class="nav">
+                        <div>
+                            <p class="p2">Ekspert Profilaktyka</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="index.html" class="p2">Strona głowna</a>
+                            </li>
+                            <li>
+                                <a href="onas.html" class="p2">O nas</a>
+                            </li>
+                            <li>
+                                <a href="dzienprofilaktyki.html" class="p2">Dzień Profilaktyki</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html" class="p2">Komtakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav">
+                        <div>
+                            <p class=" p2">Warsztaty i szkolenia</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="warsztatydlaucziow.html" class="p2">Dla uczniów</a>
+                            </li>
+                            <li>
+                                <a href="szkoleniadlarodzicow.html" class="p2">Dla rodziców</a>
+                            </li>
+                            <li>
+                                <a href="szkoleniadlakadrypedagogicznej.html" class="p2">Dla kadry pedagogicznej</a>
+                            </li>
+                            <li>
+                                <a href="rekomendowaneprogramy.html">Rekomendowane
+                                    programy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <div class="info">
+                <p>
+                    <span>
+                        &#x00A9;2024 Centrum profilaktyki uzależnień EKSPERT
+                        &#174;Wszystkie prawa
+                        zastrzeżone
+                    </span>
+                </p>
+                <p>
+                    <span>Projekt i wykonanie: Marcin Grabowski</span>
+                </p>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+
+</html>
