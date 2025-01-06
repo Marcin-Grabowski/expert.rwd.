@@ -1005,8 +1005,6 @@ main {
                 flex-wrap: wrap;
             }
         }
-
-
     }
 }
 
@@ -1195,7 +1193,7 @@ main {
             gap: var(--Spacing-1rem);
             align-self: stretch;
             position: sticky;
-            top: var(--Spacing-1rem);
+            top: var(--Spacing-4rem);
 
 
 
