@@ -680,7 +680,8 @@ main {
                 max-width: 412px;
                 flex-direction: column;
                 align-items: flex-start;
-                top: var(--Spacing-5-rems, 80px);
+                --Spacing-8-rem: 128px;
+                top: var(--Spacing-8-rem 128px);
                 flex: 1 0 0;
 
                 .address {
@@ -1193,7 +1194,7 @@ main {
             gap: var(--Spacing-1rem);
             align-self: stretch;
             position: sticky;
-            top: var(--Spacing-5-rems, 80px);
+            top: var(--Spacing-8-rem 128px);
 
 
 
