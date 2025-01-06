@@ -1193,7 +1193,7 @@ main {
             gap: var(--Spacing-1rem);
             align-self: stretch;
             position: sticky;
-            top: var(--Spacing-4rem);
+            top: var(--Spacing-4-rems, 64px);
 
 
 
