@@ -951,59 +951,60 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    gap: var(--spacing-15-rem, 24px);
+                    gap: var(--Spacing-1rem, 16px);
                     align-self: stretch;
-                    /* background-color: antiquewhite; */
+                    background-color: antiquewhite;
 
                     li {
                         align-items: flex-start;
                         gap: 4px;
                         align-self: stretch;
                     }
-                }
-            }
 
-
-            .product-header {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--Spacing-1rem);
-                align-self: stretch;
-
-                ul {
-                    display: flex;
-                    align-items: flex-start;
-                    align-content: flex-start;
-                    gap: 12px var(--spacing-15-rem, 24px);
-                    align-self: stretch;
-                    flex-wrap: wrap;
-
-                    li {
+                    .product-header {
                         display: flex;
+                        flex-direction: column;
                         align-items: flex-start;
-                        gap: 4px;
+                        gap: var(--Spacing-1rem, 16px);
                         align-self: stretch;
 
-                        .fiber-size {
+                        ul {
                             display: flex;
-                            justify-content: flex-start;
-                            align-items: center;
-                            font-size: 16px;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: var(--spacing-05-rem, 8px);
+                            align-self: stretch;
+
+                            li {
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 4px;
+                                align-self: stretch;
+
+                                .fiber-size {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    font-size: 16px;
+                                }
+                            }
                         }
                     }
+
+                    .product-details {
+                        display: flex;
+                        padding: var(--Spacing-1rem, 16px) 0px;
+                        align-items: center;
+                        align-content: center;
+                        gap: 19px;
+                        align-self: stretch;
+                        flex-wrap: wrap;
+                    }
                 }
             }
 
-            .product-details {
-                display: flex;
-                padding: var(--Spacing-1rem, 16px) 0px;
-                align-items: center;
-                align-content: center;
-                gap: 19px;
-                align-self: stretch;
-                flex-wrap: wrap;
-            }
+
+
         }
     }
 }
@@ -1056,6 +1057,7 @@ main {
         }
     }
 
+
     .products-section {
         display: flex;
         padding: var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
@@ -1083,81 +1085,58 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    gap: var(--spacing-15-rem, 24px);
+                    gap: var(--Spacing-1rem, 16px);
                     align-self: stretch;
-                    /* background-color: antiquewhite; */
+                    background-color: antiquewhite;
 
-                    #product-list-keeds {
-                        margin-bottom: 0px;
-                        padding-left: 20px;
+                    li {
+                        align-items: flex-start;
+                        gap: 4px;
+                        align-self: stretch;
                     }
 
-                    #product-list-teacher {
-                        margin-bottom: 0px;
-                        padding-left: 20px;
+                    .product-header {
                         display: flex;
+                        flex-direction: column;
                         align-items: flex-start;
-                        align-content: flex-start;
-                        gap: var(--Spacing-5-rem);
+                        gap: var(--Spacing-1rem, 16px);
                         align-self: stretch;
-                        flex-wrap: wrap;
 
-                        li {
-                            align-items: flex-start;
-                            gap: 4px;
-                            align-self: stretch;
-                        }
-                    }
-                }
-
-
-                .product-header {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: var(--Spacing-1rem);
-                    align-self: stretch;
-
-                    ul {
-                        display: flex;
-                        align-items: flex-start;
-                        align-content: flex-start;
-                        gap: 12px var(--spacing-15-rem, 24px);
-                        align-self: stretch;
-                        flex-wrap: wrap;
-
-                        li {
+                        ul {
                             display: flex;
+                            flex-direction: column;
                             align-items: flex-start;
-                            gap: 4px;
+                            gap: var(--spacing-05-rem, 8px);
                             align-self: stretch;
 
-                            .fiber-size {
+                            li {
                                 display: flex;
-                                justify-content: flex-start;
-                                align-items: center;
-                                font-size: 16px;
+                                align-items: flex-start;
+                                gap: 4px;
+                                align-self: stretch;
+
+                                .fiber-size {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    font-size: 16px;
+                                }
                             }
                         }
                     }
-                }
 
-                .product-details {
-                    display: flex;
-                    padding: var(--Spacing-1rem, 16px) 0px;
-                    align-items: center;
-                    align-content: center;
-                    gap: 19px;
-                    align-self: stretch;
-                    flex-wrap: wrap;
-
-                    #button-blue {
-                        color: var(--Text-Body-alternative-tertiary, #2900BD);
-                        background: var(--Color-Secondary-100, #DBD4F4);
-
+                    .product-details {
+                        display: flex;
+                        padding: var(--Spacing-1rem, 16px) 0px;
+                        align-items: center;
+                        align-content: center;
+                        gap: 19px;
+                        align-self: stretch;
+                        flex-wrap: wrap;
                     }
                 }
             }
+
 
 
         }
