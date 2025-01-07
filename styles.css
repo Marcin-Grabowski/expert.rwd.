@@ -602,6 +602,10 @@ main {
                                 font-size: 16px;
                             }
                         }
+
+                        #max-width-none {
+                            max-width: none;
+                        }
                     }
                 }
 
