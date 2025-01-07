@@ -1134,14 +1134,34 @@ main {
                         align-self: stretch;
                         flex-wrap: wrap;
                     }
+
+                    #product-list-keeds {
+                        margin-bottom: 0px;
+                        padding-left: 20px;
+                    }
+
+                    #product-list-teacher {
+                        margin-bottom: 0px;
+                        padding-left: 20px;
+                        display: flex;
+                        align-items: flex-start;
+                        align-content: flex-start;
+                        gap: var(--Spacing-5-rem);
+                        align-self: stretch;
+                        flex-wrap: wrap;
+
+                        li {
+                            align-items: flex-start;
+                            gap: 4px;
+                            align-self: stretch;
+                        }
+                    }
                 }
             }
-
-
-
         }
     }
 }
+
 
 
 
