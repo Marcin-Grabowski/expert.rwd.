@@ -266,6 +266,10 @@ main {
         font-size: 11px;
         font-weight: 400;
         letter-spacing: 0.3px;
+
+        a {
+            color: #DEDEDF;
+        }
     }
 }
 
@@ -947,10 +951,6 @@ main {
                 gap: var(--Spacing-3-rem, 48px);
                 flex: 1 0 0;
 
-
-
-
-
                 .product-card {
                     display: flex;
                     flex-direction: column;
@@ -993,6 +993,11 @@ main {
                                 }
                             }
                         }
+                    }
+
+                    .product-description {
+                        gap: var(--Spacing-05rem, 8px);
+                        background-color: #2900BD;
                     }
 
                     .product-details {
@@ -1133,12 +1138,20 @@ main {
                         }
                     }
 
+                    .product-description {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: var(--Spacing-05rem, 8px);
+                        align-self: stretch;
+                    }
+
                     .product-details {
                         display: flex;
                         padding: var(--Spacing-1rem, 16px) 0px;
                         align-items: center;
                         align-content: center;
-                        gap: 19px;
+                        gap: 16px;
                         align-self: stretch;
                         flex-wrap: wrap;
                     }
