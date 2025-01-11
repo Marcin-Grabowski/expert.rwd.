@@ -1212,7 +1212,7 @@ main {
             align-items: flex-start;
             gap: var(--Spacing-1rem);
             align-self: stretch;
-            top: var(--Spacing-5-rem);
+            top: var(--Spacing-5-rem, 80px);
             position: sticky;
 
 
