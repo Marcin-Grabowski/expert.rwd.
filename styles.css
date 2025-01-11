@@ -1002,7 +1002,6 @@ main {
 
                     .product-details {
                         display: flex;
-                        padding: var(--Spacing-1rem, 16px) 0px;
                         align-items: center;
                         align-content: center;
                         gap: 19px;
@@ -1108,6 +1107,10 @@ main {
                         align-self: stretch;
                     }
 
+                    ol {
+                        margin: 0px;
+                    }
+
                     .product-header {
                         display: flex;
                         flex-direction: column;
@@ -1148,7 +1151,6 @@ main {
 
                     .product-details {
                         display: flex;
-                        padding: var(--Spacing-1rem, 16px) 0px;
                         align-items: center;
                         align-content: center;
                         gap: 16px;
@@ -1212,7 +1214,7 @@ main {
             align-items: flex-start;
             gap: var(--Spacing-1rem);
             align-self: stretch;
-            top: var(--Spacing-5-rem, 80px);
+            top: var(--Spacing-5-rem);
             position: sticky;
 
 
