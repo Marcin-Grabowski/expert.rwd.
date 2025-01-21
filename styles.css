@@ -956,7 +956,6 @@ main {
                     align-items: flex-start;
                     gap: var(--Spacing-1rem, 16px);
                     align-self: stretch;
-                    background-color: antiquewhite;
 
                     li {
                         align-items: flex-start;
@@ -1098,7 +1097,6 @@ main {
                     align-items: flex-start;
                     gap: var(--Spacing-1rem, 16px);
                     align-self: stretch;
-                    background-color: antiquewhite;
 
                     li {
                         align-items: flex-start;
