@@ -46,7 +46,6 @@ main {
     z-index: 1000;
 
 
-
     .header-container {
         display: flex;
         width: 100%;
@@ -134,9 +133,8 @@ main {
                     position: absolute;
                     background: var(--Body-Nav-Background, #FFF);
                     border-radius: 0px 0px 16px 16px;
-                    top: 100%;
+                    top: 90%;
                     z-index: 1;
-                    /* text-decoration: none; */
                 }
 
                 #dropdown-button {
@@ -1216,8 +1214,17 @@ main {
             align-self: stretch;
             top: var(--Spacing-5-rem);
             position: sticky;
+
+
+
+
+
             border-radius: var(--Spacing-1rem, 16px);
             background: var(--Body-Primary-Backgorund, #FFF);
+
+            /* Shadow/Small */
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
             /* Shadow/Small */
             box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 
@@ -1315,6 +1322,17 @@ button {
     }
 }
 
+.badge {
+    display: flex;
+    min-width: var(--width-8-rem);
+    padding: var(--spacing-075-rem, 12px) var(--Spacing-1rem, 16px);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--spacing-15-rem, 24px);
+    background: var(--Color-Secondary-100, #DBD4F4);
+    color: var(--Text-Body-alternative-tertiary, #2900BD);
+}
+
 .button-secondary {
     color: var(--Button-secondary-default, #00BB29);
     background: none;
@@ -1344,6 +1362,8 @@ button {
         border: 2px solid var(--Button-secondary-disabled);
     }
 }
+
+.badge {}
 
 h1 {
     /* Regular/Regular-H01 */
