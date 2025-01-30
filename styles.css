@@ -58,11 +58,10 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
 
             a {
                 width: 199.048px;
-                height: var(--Spacing-3-rem, 48px);
+                height: var(--Spacing-3-rem);
             }
         }
 
@@ -279,7 +278,7 @@ main {
 .home {
     .hero-section {
         display: flex;
-        padding: var(--Spacing-3-rem, 48px) var(--Spacing-5-rem, 80px) var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
+        padding: var(--Spacing-3-rem) var(--Spacing-5-rem) var(--Spacing-4-rem) var(--Spacing-5-rem);
         flex-direction: column;
         align-items: center;
         align-self: stretch;
@@ -1284,7 +1283,7 @@ main {
     }
 }
 
-button {
+.btn {
     display: flex;
     height: var(--Spacing-3-rem, 48px);
     min-width: var(--Spacing-10-rem, 160px);
@@ -1363,7 +1362,7 @@ button {
     }
 }
 
-.badge {}
+/* .badge {} */
 
 h1 {
     /* Regular/Regular-H01 */
