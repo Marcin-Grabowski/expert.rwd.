@@ -109,6 +109,10 @@
             text-align: left;
         }
     }
+
+    #dropbtn {
+        display: block;
+    }
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,7 +121,7 @@
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 780px) {
     .header {
         padding: var(--spacing-05-rem, 8px) var(--spacing-125-rem, 20px);
     }
@@ -133,7 +137,7 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 780px) {
 
 
     .menu-container {
