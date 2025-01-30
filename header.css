@@ -185,6 +185,7 @@
 
             .dropdown-content {
                 position: relative;
+                margin-left: var(--Spacing-1rem);
             }
         }
     }
