@@ -14,8 +14,6 @@
     <meta property="og:url" content="https://expert-chi-beryl.vercel.app/index.html" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/x-icon" href="assets/icon/Ekspert-favicon.svg">
-    <link rel="stylesheet" href="header.css">
-
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -241,19 +239,9 @@
                 </aside>
             </div>
         </section>
-        <script>
-            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
+
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer">xs
         <div class="footer-container">
             <section class="footer-nav">
                 <div class="nav-container">
@@ -316,6 +304,24 @@
 
 
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.getElementById("myTopnav");
+            const icon = document.querySelector(".icon");
+
+            icon.addEventListener("click", function (event) {
+                menu.classList.toggle("responsive");
+                event.stopPropagation(); // Zapobiega natychmiastowemu zamknięciu
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !icon.contains(event.target)) {
+                    menu.classList.remove("responsive");
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
