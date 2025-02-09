@@ -48,6 +48,8 @@ main {
             position: absolute;
             right: 0;
             top: 0;
+            font-size: 24px;
+
         }
 
         .topnav.responsive {
@@ -109,7 +111,7 @@ main {
             align-self: stretch;
 
             .hero-text-container {
-                padding: 32px 20px 4px !important;
+                padding: 32px 20px 8px !important;
                 max-width: none !important;
             }
 
@@ -164,20 +166,6 @@ main {
                 height: auto;
             }
         }
-
-        /* .about-section {
-            flex-direction: column;
-
-
-            .about-container {
-                padding: var(--Spacing-2-rem, 32px) var(--spacing-125-rem, 20px) !important;
-                max-width: none !important;
-            }
-
-            .about-image {
-                height: 280px !important;
-            }
-        } */
     }
 
     .about {
@@ -187,7 +175,7 @@ main {
             align-self: stretch;
 
             .hero-text-container {
-                padding: 32px 20px 4px !important;
+                padding: 32px 20px 8px !important;
                 max-width: none !important;
             }
 
@@ -206,7 +194,7 @@ main {
         }
 
         .info-section {
-            padding: 32px 20px 4px !important;
+            padding: var(--Spacing-2-rem, 32px) var(--spacing-125-rem, 20px) !important;
         }
 
         .img-mobile {
@@ -230,8 +218,33 @@ main {
 
         }
     }
-}
 
+    .oferta-dzienprofilaktyki {
+        .hero-section {
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+
+            .hero-text-container {
+                padding: 32px 20px 8px !important;
+                max-width: none !important;
+            }
+
+            .hero-img {
+                height: var(--height-20-rem);
+            }
+
+            .img-desktop {
+                display: none;
+            }
+
+            .img-mobile {
+                display: block;
+                height: auto;
+            }
+        }
+    }
+}
 
 
 
@@ -259,9 +272,10 @@ main {
         justify-content: center;
         align-items: center;
         gap: var(--spacing-05-rem, 8px);
-        background-color: transparent;
         color: var(--Nav-default, #000);
         text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 0.16px;
 
         #kontakt {
             z-index: 1000;
@@ -493,7 +507,7 @@ main {
         .hero-text-container {
             display: flex;
             margin-left: auto;
-            max-width: 628px;
+            max-width: 668px;
             padding: var(--Spacing-3-rem) 0px var(--Spacing-4-rem) var(--Spacing-5-rem);
             flex-direction: column;
             align-items: flex-start;
@@ -571,7 +585,7 @@ main {
 
     .content-section {
         display: flex;
-        padding: var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
+        padding: var(--Spacing-4-rem) var(--Spacing-5-rem);
         margin: 0 auto;
         flex-direction: column;
         align-items: center;
@@ -584,16 +598,21 @@ main {
             justify-content: center;
             align-items: flex-start;
             align-content: flex-start;
-            gap: 24px var(--spacing-15-rem, 24px);
+            gap: var(--Spacing-1rem);
             flex-wrap: wrap;
-            max-width: 1280px;
+            align-items: stretch;
+            max-width: 1336px;
+
 
             .card-link {
                 display: flex;
-                min-width: 420px;
-                padding: var(--Spacing-1rem, 16px);
+                flex-direction: column;
+                min-width: 240px;
+                max-width: 290px;
+                height: auto;
+                padding: var(--Spacing-1rem);
                 align-items: flex-start;
-                gap: var(--Spacing-1rem, 16px);
+                gap: var(--Spacing-1rem);
                 flex: 1 0 0;
 
 
@@ -632,10 +651,14 @@ main {
 
                 .card-img {
                     display: flex;
-                    width: var(--Spacing-8-rem, 128px);
-                    height: var(--Spacing-8-rem, 128px);
+                    /* width: var(--Spacing-8-rem);
+                    height: var(--Spacing-8-rem); */
                     justify-content: center;
                     align-items: center;
+
+                    img {
+                        width: 80px;
+                    }
 
                 }
             }
@@ -653,7 +676,7 @@ main {
         .about-text-container {
             display: flex;
             margin-left: auto;
-            max-width: 628px;
+            max-width: 668px;
             padding: var(--Spacing-3-rem) 0px var(--Spacing-4-rem) var(--Spacing-5-rem);
             flex-direction: column;
             align-items: flex-start;
@@ -732,7 +755,7 @@ main {
     }
 }
 
-
+/* good */
 .about {
     .hero-section {
         display: flex;
@@ -1175,6 +1198,93 @@ main {
 .oferta-dzienprofilaktyki {
     .hero-section {
         display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+        overflow: hidden;
+        background: var(--Body-secondary-Backgorund);
+
+        .hero-text-container {
+            display: flex;
+            margin-left: auto;
+            max-width: 668px;
+            padding: var(--Spacing-3-rem) 0px var(--Spacing-4-rem) var(--Spacing-5-rem);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-15-rem, 24px);
+            flex: 1 0 0;
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: var(--Spacing-1rem, 16px);
+                align-self: stretch;
+
+            }
+
+            .btn-container {
+                display: flex;
+                padding-bottom: 1px;
+                align-items: center;
+                gap: var(--Spacing-1rem, 16px);
+                align-self: stretch;
+            }
+
+            .hero-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--Spacing-1rem, 16px);
+                align-self: stretch;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: var(--spacing-075-rem, 12px);
+                    align-self: stretch;
+                    margin: 0px;
+                    padding-left: 0px;
+
+                    li {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: var(--Spacing-1rem, 8px);
+                        align-self: stretch;
+
+                        .fiber-size {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .hero-img {
+            position: relative;
+            width: 50%;
+            /* height: 500px; */
+            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+
+    /* .hero-section {
+        display: flex;
         padding: var(--Spacing-3-rem, 48px) var(--Spacing-5-rem, 80px) var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
         flex-direction: column;
         align-items: center;
@@ -1199,7 +1309,7 @@ main {
                 flex: 1 0 0;
             }
         }
-    }
+    } */
 
     .products-section {
         display: flex;
@@ -1804,7 +1914,7 @@ h6 {
 }
 
 p,
-strong {
+#strong {
     /* Regular/Body/Body 1 */
     font-family: Poppins;
     font-size: 16px;
@@ -1882,6 +1992,7 @@ strong {
     display: grid;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
     width: var(--spacing-15-rem, 24px);
     height: var(--spacing-15-rem, 24px);
     color: var(--icon-color-primary, #000000);
