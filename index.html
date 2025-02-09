@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="sript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,7 +27,7 @@
 </head>
 
 <body class="home">
-    <header class="header">
+    <header class="main-header">
         <div class="menu-container">
             <div class="header-logo">
                 <a href="index.html">
@@ -34,22 +35,22 @@
                         alt="EkspertCentrumProfilaktykiUzależnień">
                 </a>
             </div>
-            <div class="topnav" id="myTopnav">
-                <div style="display: flex;">
-                    <a href="javascript:void(0);" class="navbtn icon material-icons" onclick="myFunction()">menu</a>
-                </div>
+            <nav class="topnav" id="myTopnav" role="navigation">
+                <button style="position: absolute;">
+                    <a href="javascript:void(0);" class="navbtn icon material-icons" aria-label="Otwórz menu"
+                        onclick="myFunction()">menu</a>
+                </button>
                 <div class="link-container">
                     <a class="navbtn" href="index.html">Strona główna</a>
                     <a class="navbtn" href="onas.html">O nas</a>
                     <div class="dropdown">
-                        <div class="dropbtn">Warsztaty i szkolenia
-                            <i class="material-icons">keyboard_arrow_down</i></a>
-                        </div>
+                        <button class="dropbtn navbtn">Warsztaty i szkolenia
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </button>
                         <div class="dropdown-content">
                             <a class="navbtn" href="warsztatydlaucziow.html">Warsztaty dla uczniów</a>
                             <a class="navbtn" href="szkoleniadlarodzicow.html">Szkolenia dla rodziców</a>
-                            <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla
-                                kadry
+                            <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla kadry
                                 pedagogicznej</a>
                             <a class="navbtn" href="rekomendowaneprogramy.html">Rekomendowane programy</a>
                         </div>
@@ -57,67 +58,67 @@
                     <a class="navbtn" href="dzienprofilaktyki.html">Dzień profilaktyki</a>
                     <a class="navbtn" href="kontakt.html">Kontakt</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
-    <main class="home">
+    <main>
         <section class="hero-section">
-            <div class="hero-container">
-                <article class="hero-text-container">
-                    <article class="hero-article">
-                        <section class="text-container">
-                            <header>
-                                <h4 class="medium primar header-color-primary">21 stycznia - 18:00</h4>
-                                <h4 class="medium primar header-color-primary">Kompletne szkolenia i warsztaty</h4>
-                            </header>
-                            <p>
-                                Nasze warsztaty i szkolenia w sposób całościowy ujmują problemy z jakimi każdego dnia
-                                muszą
-                                mierzyć
-                                się dzieci, młodzież i dorośli. Najważniejszym celem dla nas jest pomóc uczniom radzić
-                                sobie
-                                z
-                                aktualnie dotykającymi ich trudnościami oraz wyposażyć w umiejętności, które pozwolą im
-                                w
-                                późniejszym życiu poradzić sobie z różnymi zagrożeniami i pokusami.
-                            </p>
-                        </section>
-                        <nav class="button-container">
-                            <button onclick="location.href='kontakt.html'" type="button"
-                                class="btn button-primary">Kontakt
-                                z nami</button>
-                            <button onclick="location.href='dzienprofilaktyki.html'" type="button"
-                                class="btn button-secondary">Dzień
-                                profilaktyki</button>
-                        </nav>
-                    </article>
-                    <article class="list-container">
-                        <header>
-                            <h4 class="medium header-color-primary">Co nas wyróżnia</h4>
-                        </header>
-                        <ul>
-                            <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
-                                <p>Zajęcia prowadzone przez psychologów-terapeutów w
-                                    formie stricte warsztatowej</p>
-                            </li>
-                            <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
-                                <p>Warsztaty napisane na bazie wytycznych KCPU/PARPA</p>
-                            </li>
-                            <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
-                                <p>Tematyka odpowiednia do aktualnych problemów dzieci i młodzieży</p>
-                            </li>
-                            <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
-                                <p>Różne scenariusze zajęć dostosowane do wieku odbiorców</p>
-                            </li>
-                            <li>
-                            <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
-                                <p>Przesyłamy zaświadczenie o zrealizowanym programie profilaktycznym</p>
-                            </li>
-                        </ul>
-                    </article>
-                </article>
-                <div class="empty-container"></div>
-            </div>
+            <article class="hero-text-container">
+                <div class="text-container">
+                    <header>
+                        <h4 class="medium primar header-color-primary">Kompletne szkolenia i warsztaty</h4>
+                    </header>
+                    <p>
+                        Nasze warsztaty i szkolenia w sposób całościowy ujmują problemy z jakimi każdego dnia
+                        muszą
+                        mierzyć
+                        się dzieci, młodzież i dorośli. Najważniejszym celem dla nas jest pomóc uczniom radzić
+                        sobie
+                        z
+                        aktualnie dotykającymi ich trudnościami oraz wyposażyć w umiejętności, które pozwolą im
+                        w
+                        późniejszym życiu poradzić sobie z różnymi zagrożeniami i pokusami.
+                    </p>
+                </div>
+                <nav class="btn-container">
+                    <button onclick="location.href='kontakt.html'" type="button" class="btn button-primary">Kontakt
+                        z nami</button>
+                    <button onclick="location.href='dzienprofilaktyki.html'" type="button"
+                        class="btn button-secondary">Dzień
+                        profilaktyki</button>
+                </nav>
+                <div class="hero-list">
+                    <header>
+                        <h4 class="medium header-color-primary">Co nas wyróżnia</h4>
+                    </header>
+                    <ul>
+                        <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
+                            <p>Zajęcia prowadzone przez psychologów-terapeutów w
+                                formie stricte warsztatowej</p>
+                        </li>
+                        <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
+                            <p>Warsztaty napisane na bazie wytycznych KCPU/PARPA</p>
+                        </li>
+                        <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
+                            <p>Tematyka odpowiednia do aktualnych problemów dzieci i młodzieży</p>
+                        </li>
+                        <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
+                            <p>Różne scenariusze zajęć dostosowane do wieku odbiorców</p>
+                        </li>
+                        <li>
+                        <li><i class="material-icons fiber-size" id="icons-color-tertiary">fiber_manual_record</i>
+                            <p>Przesyłamy zaświadczenie o zrealizowanym programie profilaktycznym</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <picture class="hero-img">
+                <source srcset="assets/img/bg-desktop-home-hero.webp" media="(min-width:1081px)" type="image/webp"
+                    class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
+                <source srcset="assets/img/bg-mobile-home-hero.webp" type="image/webp" class="img-mobile"
+                    alt="Nauczielka prowadząca kursy dla dzieci.">
+                <img src="assets/img/bg-desktop-home-hero.jpg" alt="Nauczielka prowadząca kursy dla dzieci.">
+            </picture>
         </section>
         <section class="content-section">
             <header style="text-align: center;">
@@ -186,31 +187,34 @@
             </div>
         </section>
         <section class="about-section">
-            <section class="about-container">
-                <article class="about-article">
-                    <article class="about-text">
-                        <header>
-                            <h4 class="medium header-color-primary">O nas</h4>
-                        </header>
-                        <p>
-                            Centrum Profilaktyki Ekspert to pracownia składająca się ze specjalistów mających
-                            wieloletnie doświadczenie w profilaktyce oraz w pracy terapeutycznej z dziećmi i
-                            młodzieżą.
-                        </p>
-                        <p>
-                            Mając na uwadzę dynamicznie zmieniający się świat staramy się wychodzić naprzeciw nowym
-                            niebezpiecznym trendom w zachowaniach uczniów realizując innowacyjne warsztaty
-                            profilaktyczne.
-                        </p>
-                    </article>
-                    <div>
-                        <button onclick="location.href='onas.html'" type="button" class="btn button-primary">O
-                            nas</button>
-                    </div>
+            <article class="about-text-container">
+                <article class="about-text">
+                    <header>
+                        <h4 class="medium header-color-primary">O nas</h4>
+                    </header>
+                    <p>
+                        Centrum Profilaktyki Ekspert to pracownia składająca się ze specjalistów mających
+                        wieloletnie doświadczenie w profilaktyce oraz w pracy terapeutycznej z dziećmi i
+                        młodzieżą.
+                    </p>
+                    <p>
+                        Mając na uwadzę dynamicznie zmieniający się świat staramy się wychodzić naprzeciw nowym
+                        niebezpiecznym trendom w zachowaniach uczniów realizując innowacyjne warsztaty
+                        profilaktyczne.
+                    </p>
                 </article>
-                <div class="empty-container"></div>
-
-            </section>
+                <div>
+                    <button onclick="location.href='onas.html'" type="button" class="btn button-primary">O
+                        nas</button>
+                </div>
+            </article>
+            <picture class="about-img">
+                <source srcset="assets/img/bg-desktop-home-hero.webp" media="(min-width:1081px)" type="image/webp"
+                    class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
+                <source srcset="assets/img/bg-mobile-home-hero.webp" type="image/webp" class="img-mobile"
+                    alt="Nauczielka prowadząca kursy dla dzieci.">
+                <img src="assets/img/bg-desktop-home-hero.jpg" alt="Nauczielka prowadząca kursy dla dzieci.">
+            </picture>
         </section>
         <section class="clients-logo-section">
             <header class="centered-header">
@@ -239,9 +243,8 @@
                 </aside>
             </div>
         </section>
-
     </main>
-    <footer class="main-footer">xs
+    <footer class="main-footer">
         <div class="footer-container">
             <section class="footer-nav">
                 <div class="nav-container">
@@ -304,24 +307,6 @@
 
 
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menu = document.getElementById("myTopnav");
-            const icon = document.querySelector(".icon");
-
-            icon.addEventListener("click", function (event) {
-                menu.classList.toggle("responsive");
-                event.stopPropagation(); // Zapobiega natychmiastowemu zamknięciu
-            });
-
-            document.addEventListener("click", function (event) {
-                if (!menu.contains(event.target) && !icon.contains(event.target)) {
-                    menu.classList.remove("responsive");
-                }
-            });
-        });
-
-    </script>
 </body>
 
 </html>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="sript.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
 </head>
 
 <body class="about">
-    <header class="header">
+    <header class="main-header">
         <div class="menu-container">
             <div class="header-logo">
                 <a href="index.html">
@@ -34,22 +35,22 @@
                         alt="EkspertCentrumProfilaktykiUzależnień">
                 </a>
             </div>
-            <div class="topnav" id="myTopnav">
-                <div style="display: flex;">
-                    <a href="javascript:void(0);" class="navbtn icon material-icons" onclick="myFunction()">menu</a>
-                </div>
+            <nav class="topnav" id="myTopnav" role="navigation">
+                <button style="position: absolute;">
+                    <a href="javascript:void(0);" class="navbtn icon material-icons" aria-label="Otwórz menu"
+                        onclick="myFunction()">menu</a>
+                </button>
                 <div class="link-container">
                     <a class="navbtn" href="index.html">Strona główna</a>
                     <a class="navbtn" href="onas.html">O nas</a>
                     <div class="dropdown">
-                        <div class="dropbtn">Warsztaty i szkolenia
-                            <i class="material-icons">keyboard_arrow_down</i></a>
-                        </div>
+                        <button class="dropbtn navbtn">Warsztaty i szkolenia
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </button>
                         <div class="dropdown-content">
                             <a class="navbtn" href="warsztatydlaucziow.html">Warsztaty dla uczniów</a>
                             <a class="navbtn" href="szkoleniadlarodzicow.html">Szkolenia dla rodziców</a>
-                            <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla
-                                kadry
+                            <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla kadry
                                 pedagogicznej</a>
                             <a class="navbtn" href="rekomendowaneprogramy.html">Rekomendowane programy</a>
                         </div>
@@ -57,42 +58,44 @@
                     <a class="navbtn" href="dzienprofilaktyki.html">Dzień profilaktyki</a>
                     <a class="navbtn" href="kontakt.html">Kontakt</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
         <section class="hero-section">
-            <section class="hero-container">
-                <section class="hero-text-container">
-                    <section class="hero-article">
-
-                        <header>
-                            <h4 class="medium header-color-primary">O nas</h4>
-                        </header>
-                        <p>
-                            Trzon naszej kadry trenerskiej stanowią psycholodzy, terapeuci, animatorzy z długoletnim
-                            stażem dla których profilaktyka nie stanowi tajemnic oraz doświadczeni konsultanci,
-                            którzy będą w stanie doradzić Państwu najlepsze rozwiązania pod kątem sygnalizowanych
-                            problemów. Ponadto kadra trenerska ciągle się rozwija i zdobywa nowe certyfikaty a nasze
-                            usługi spełniają wszelkie normy w zakresie etyki oraz standardów bezpieczeństwa i zasad
-                            szkoleniowych.
-                        </p>
-                    </section>
-                    <section class="hero-article">
-                        <header>
-                            <h4 class="medium header-color-primary">Jak pracujemy</h4>
-                        </header>
-                        <p>
-                            Nasi trenerzy posługują się rozmaitymi, aktywizującymi metodami pracy dostosowanymi do
-                            poruszanego tematu ale przede wszystkim do wieku odbiorców co oznacza, że schemat pracy
-                            na warsztacie z takiej samej tematyki dla uczniów klas 4-5 będzie wyglądał inaczej niż
-                            dla uczniów klas 6-8 itp.
-                        </p>
-                    </section>
+            <section class="hero-text-container">
+                <section class="text-container">
+                    <header>
+                        <h4 class="medium header-color-primary">O nas</h4>
+                    </header>
+                    <p>
+                        Trzon naszej kadry trenerskiej stanowią psycholodzy, terapeuci, animatorzy z długoletnim
+                        stażem dla których profilaktyka nie stanowi tajemnic oraz doświadczeni konsultanci,
+                        którzy będą w stanie doradzić Państwu najlepsze rozwiązania pod kątem sygnalizowanych
+                        problemów. Ponadto kadra trenerska ciągle się rozwija i zdobywa nowe certyfikaty a nasze
+                        usługi spełniają wszelkie normy w zakresie etyki oraz standardów bezpieczeństwa i zasad
+                        szkoleniowych.
+                    </p>
                 </section>
-                <div class="empty-container">
-                </div>
+                <section class="hero-article">
+                    <header>
+                        <h4 class="medium header-color-primary">Jak pracujemy</h4>
+                    </header>
+                    <p>
+                        Nasi trenerzy posługują się rozmaitymi, aktywizującymi metodami pracy dostosowanymi do
+                        poruszanego tematu ale przede wszystkim do wieku odbiorców co oznacza, że schemat pracy
+                        na warsztacie z takiej samej tematyki dla uczniów klas 4-5 będzie wyglądał inaczej niż
+                        dla uczniów klas 6-8 itp.
+                    </p>
+                </section>
             </section>
+            <picture class="hero-img">
+                <source srcset="assets/img/bg-desktop-home-hero.webp" media="(min-width:1081px)" type="image/webp"
+                    class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
+                <source srcset="assets/img/bg-mobile-home-hero.webp" type="image/webp" class="img-mobile"
+                    alt="Nauczielka prowadząca kursy dla dzieci.">
+                <img src="assets/img/bg-desktop-home-hero.jpg" alt="Nauczielka prowadząca kursy dla dzieci.">
+            </picture>
         </section>
         <section class="info-section">
             <div class="info-container">
@@ -134,17 +137,20 @@
                             </li>
                         </ul>
                     </section>
-                    <footer>
+                    <picture class="img-mobile">
+                        <img src="assets/img/teachers-03.svg" alt="Nauczyciele">
+                    </picture>
+                    <div>
                         <p class="text-color-secondary">
                             Staramy się do każdej realizacji podchodzić indywidualnie, by jak najlepiej wspierać szkoły
                             w rozwiązywaniu ich problemów. Treści warsztatów są starannie dostosowane do różnych grup
                             wiekowych.
                         </p>
-                    </footer>
+                    </div>
                 </article>
-                <div class="img-container">
+                <picture class="img-desktop">
                     <img src="assets/img/teachers-03.svg" alt="Nauczyciele">
-                </div>
+                </picture>
             </div>
         </section>
     </main>
@@ -210,17 +216,6 @@
 
 
     </footer>
-    <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
 
 
