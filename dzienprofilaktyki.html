@@ -37,7 +37,7 @@
             </div>
             <nav class="topnav" id="myTopnav" role="navigation">
                 <button style="position: absolute;">
-                    <a href="javascript:void(0);" class="icon material-icons" aria-label="Otwórz menu"
+                    <a href="javascript:void(0);" class="navbtn icon material-icons" aria-label="Otwórz menu"
                         onclick="myFunction()">menu</a>
                 </button>
                 <div class="link-container">
@@ -65,7 +65,7 @@
         <section class="hero-section">
             <article class="hero-text-container">
                 <header>
-                    <h4 class="medium header-color-primary ">Dzień profilaktyki
+                    <h4 class="medium header-color-primary">Dzień profilaktyki
                     </h4>
                 </header>
                 <p>
@@ -83,14 +83,14 @@
                     class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
                 <source srcset="assets/img/bg-mobile-home-hero.webp" type="image/webp" class="img-mobile"
                     alt="Nauczielka prowadząca kursy dla dzieci.">
-                <img src="assets/img/bg-desktop-home-hero.jpg" alt="Nauczielka prowadząca kursy dla dzieci.">
+                <img src="assets/img/bg-desktop-home-hero.webp" alt="Nauczielka prowadząca kursy dla dzieci.">
             </picture>
         </section>
         <section class="products-section">
             <article class="products-container">
                 <div class="products-list">
                     <header>
-                        <h4 class="medium header-color-primary">Dzień profilaktyki składa się z trzech etapów</h4>
+                        <h4 class="medium header-color-secondary">Dzień profilaktyki składa się z trzech etapów</h4>
                     </header>
                     <div class="product-card">
                         <div class="product-header">
@@ -137,6 +137,10 @@
                         </div>
                         <hr class="hr" id="hr-margin">
                     </div>
+                    <div class="product-img">
+                        <img src="assets/img/bg-mobile-home-hero.webp"
+                            alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
+                    </div>
                     <div class="product-card">
                         <div class="product-header">
                             <h6 class="medium"><span class="header-color-primary">ETAP 3</span> – Szkolenie dla rodziców
@@ -156,24 +160,9 @@
                         </div>
                         <hr class="hr" id="hr-margin">
                     </div>
-                    <div class="product-card">
-                        <header>
-                            <h6 class="medium">Dodatkowym atutem dnia profilaktyki jest łączna promocyjna cena za całą
-                                realizację!
-                            </h6>
-                        </header>
-                        <p class="text-color-secondary">Uważamy, że taka forma działań profilaktycznych w szkołach jest
-                            najbardziej skuteczna i przynosi oczekiwany efekt dzięki odpowiedniej współpracy na linii
-                            rodzic-uczeń-nauczyciel.
-                            Tematykę dla uczniów, rodziców i nauczycieli mogą Państwo wybrać dowolnie spośród naszych
-                            propozycji lub ustalić indywidualnie z nami według konkretnego zapotrzebowania.
-                        </p>
-                    </div>
-                </div>
-                <div class="media-section">
-                    <img src="assets/img/dzien-profilaktyki.jpg"
-                        alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
-                    <section class="contact-section" id="sticky-element">
+                    <div class="mobile-contact-section">
+                        <img src="assets/img/dzien-profilaktyki.jpg"
+                            alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
                         <div class="contact-card" aria-label="Dane kontaktowe">
                             <div class="address-container">
                                 <h6 class="medium text-color-secondary">Zapraszamy do kontaktu:</h6>
@@ -205,8 +194,55 @@
                                 class="btn button-primary">Formularz
                                 kontaktowy</button>
                         </div>
-                    </section>
-
+                    </div>
+                    <div class="product-card">
+                        <header>
+                            <h6 class="medium">Dodatkowym atutem dnia profilaktyki jest łączna promocyjna cena za całą
+                                realizację!
+                            </h6>
+                        </header>
+                        <p class="text-color-secondary">Uważamy, że taka forma działań profilaktycznych w szkołach jest
+                            najbardziej skuteczna i przynosi oczekiwany efekt dzięki odpowiedniej współpracy na linii
+                            rodzic-uczeń-nauczyciel.
+                            Tematykę dla uczniów, rodziców i nauczycieli mogą Państwo wybrać dowolnie spośród naszych
+                            propozycji lub ustalić indywidualnie z nami według konkretnego zapotrzebowania.
+                        </p>
+                    </div>
+                </div>
+                <div class="desktop-contact-section">
+                    <img src="assets/img/dzien-profilaktyki.jpg"
+                        alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
+                    <div class="contact-card" aria-label="Dane kontaktowe">
+                        <div class="address-container">
+                            <h6 class="medium text-color-secondary">Zapraszamy do kontaktu:</h6>
+                            <address aria-label="Dane kontaktowe">
+                                <p>
+                                    <a href="mailto:ekspert.profilaktyka@gmail.com">
+                                        <span aria-hidden="true">
+                                            <i class="material-icons">mail</i>
+                                        </span> ekspert.profilaktyka@gmail.com
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="tel:+48511117620">
+                                        <span aria-hidden="true">
+                                            <i class="material-icons">call</i>
+                                        </span>+48 511 117 620
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="tel:+48517686587">
+                                        <span aria-hidden="true">
+                                            <i class="material-icons">call</i>
+                                        </span>+48 517 686 587
+                                    </a>
+                                </p>
+                            </address>
+                        </div>
+                        <button onclick="location.href='kontakt.html'" type="button"
+                            class="btn button-primary">Formularz
+                            kontaktowy</button>
+                    </div>
                 </div>
             </article>
         </section>
@@ -273,17 +309,6 @@
 
 
     </footer>
-    <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
 
 

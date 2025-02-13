@@ -19,11 +19,12 @@ body {
         color: inherit;
     }
 
+    /* 
     .empty-container {
         max-width: 640px;
         flex: 1 0 0;
         align-self: stretch;
-    }
+    } */
 }
 
 main {
@@ -106,7 +107,7 @@ main {
 
     .home {
         .hero-section {
-            flex-direction: column;
+            flex-direction: column !important;
             align-items: center;
             align-self: stretch;
 
@@ -243,13 +244,179 @@ main {
                 height: auto;
             }
         }
+
+        .products-section {
+            display: flex !important;
+            padding: var(--Spacing-2-rem, 32px) var(--spacing-125-rem, 20px) !important;
+            min-width: none !important;
+
+            min-width: none;
+            max-width: none;
+
+            .products-list {
+                display: flex !important;
+
+                border: solid 1px red;
+                min-width: none !important;
+
+            }
+
+            .product-card {
+                display: flex !important;
+
+                min-width: none !important;
+            }
+        }
+    }
+
+    .product-offer {
+        .hero-section {
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+
+            .hero-text-container {
+                padding: 32px 20px 8px !important;
+                max-width: none !important;
+            }
+
+            .hero-img {
+                height: var(--height-20-rem);
+            }
+
+            .img-desktop {
+                display: none;
+            }
+
+            .img-mobile {
+                display: block;
+                height: auto;
+            }
+        }
+
+        .products-section {
+            display: flex !important;
+            padding: var(--Spacing-2-rem, 32px) var(--spacing-125-rem, 20px) !important;
+            min-width: none !important;
+
+            min-width: none;
+            max-width: none;
+
+            .products-list {
+                display: flex !important;
+
+                border: solid 1px red;
+                min-width: none !important;
+
+            }
+
+            .product-card {
+                display: flex !important;
+
+                min-width: none !important;
+            }
+        }
+    }
+
+    .contact {
+        .hero-section {
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+            text-align: left !important;
+
+
+            .hero-text-container {
+                padding: 32px 20px 8px !important;
+                /* max-width: none !important; */
+
+            }
+
+            .hero-img {
+                height: var(--height-20-rem);
+            }
+
+            .img-desktop {
+                display: none;
+            }
+
+            .img-mobile {
+                display: block;
+                height: auto;
+            }
+        }
+    }
+
+    .mobile-contact-section {
+        display: flex !important;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 32px;
+
+        align-self: stretch;
+        flex-wrap: wrap;
+
+        img {
+            height: 220px;
+            min-width: 332px;
+            flex: 1 0 0;
+        }
+
+        .contact-card {
+            min-width: 332px;
+            flex: 1 0 0;
+        }
+    }
+
+    .desktop-contact-section {
+        display: none !important;
     }
 }
 
+@media screen and (max-width: 720px) {
+    /* testowe */
+
+    .oferta-dzienprofilaktyki {
+        .hero-section {
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+
+            .hero-text-container {
+                padding: 32px 20px 8px !important;
+                max-width: none !important;
+            }
+
+            .hero-img {
+                height: var(--height-20-rem);
+            }
+
+            .img-desktop {
+                display: none;
+            }
+
+            .img-mobile {
+                display: block;
+                height: auto;
+            }
+        }
+
+        .products-list {
+            gap: var(--spacing-15-rem) !important;
+        }
+    }
 
 
 
+    h4 {
+        font-size: 28px;
+    }
 
+    p {
+        font-size: 14px !important;
+    }
+
+}
 
 /* dobry header*/
 .main-header {
@@ -507,7 +674,7 @@ main {
         .hero-text-container {
             display: flex;
             margin-left: auto;
-            max-width: 668px;
+            max-width: 640px;
             padding: var(--Spacing-3-rem) 0px var(--Spacing-4-rem) var(--Spacing-5-rem);
             flex-direction: column;
             align-items: flex-start;
@@ -521,7 +688,6 @@ main {
                 align-items: flex-start;
                 gap: var(--Spacing-1rem, 16px);
                 align-self: stretch;
-
             }
 
             .btn-container {
@@ -535,6 +701,7 @@ main {
             .hero-list {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: flex-start;
                 gap: var(--Spacing-1rem, 16px);
                 align-self: stretch;
@@ -601,7 +768,7 @@ main {
             gap: var(--Spacing-1rem);
             flex-wrap: wrap;
             align-items: stretch;
-            max-width: 1336px;
+            max-width: 1280px;
 
 
             .card-link {
@@ -614,7 +781,7 @@ main {
                 align-items: flex-start;
                 gap: var(--Spacing-1rem);
                 flex: 1 0 0;
-
+                padding: var(--spacing-075-rem);
 
                 border-radius: var(--Spacing-1rem, 16px);
 
@@ -633,7 +800,7 @@ main {
 
                 .card-body {
                     display: flex;
-                    padding: var(--spacing-075-rem, 12px) 0px;
+                    padding: var(--spacing-05-rem, 12px) 0px;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: var(--spacing-025-rem, 4px);
@@ -676,7 +843,7 @@ main {
         .about-text-container {
             display: flex;
             margin-left: auto;
-            max-width: 668px;
+            max-width: 640px;
             padding: var(--Spacing-3-rem) 0px var(--Spacing-4-rem) var(--Spacing-5-rem);
             flex-direction: column;
             align-items: flex-start;
@@ -768,7 +935,7 @@ main {
         .hero-text-container {
             display: flex;
             margin-left: auto;
-            max-width: 628px;
+            max-width: 640px;
             padding: var(--Spacing-3-rem) 0px var(--Spacing-4-rem) var(--Spacing-5-rem);
             flex-direction: column;
             align-items: flex-start;
@@ -927,33 +1094,52 @@ main {
     }
 }
 
+
+
 .contact {
     .hero-section {
         display: flex;
-        height: var(--Height-14-rem, 224px);
-        padding: 0px var(--Spacing-5-rem, 80px);
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
+        align-items: flex-start;
         align-self: stretch;
-        background: url(assets/img/background-contact-hero.png) lightgray 50% / cover no-repeat;
+        overflow: hidden;
+        background: var(--Body-secondary-Backgorund);
 
-        .hero-container {
+        .hero-text-container {
             display: flex;
-            width: 100%;
-            max-width: 1280px;
-            justify-content: center;
-            align-items: center;
-            gap: var(--spacing-15-rem, 24px);
+            margin: auto;
+            max-width: 640px;
+            padding: var(--Spacing-5-rem) 0px var(--Spacing-5-rem) var(--Spacing-5-rem);
+            flex-direction: column;
+            align-items: flex-start;
+            /* gap: var(--spacing-15-rem, 24px); */
+            gap: 80;
+            flex: 1 0 0;
 
-            .hero-text-container {
+            .text-container {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: flex-start;
-                gap: var(--spacing-15-rem, 24px);
-                flex: 1 0 0;
+                gap: var(--Spacing-1rem, 16px);
                 align-self: stretch;
+
+            }
+        }
+
+        .hero-img {
+            position: relative;
+            width: 50%;
+            /* height: 500px; */
+            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: auto;
+                object-fit: cover;
             }
         }
     }
@@ -1195,6 +1381,7 @@ main {
     }
 }
 
+
 .oferta-dzienprofilaktyki {
     .hero-section {
         display: flex;
@@ -1283,34 +1470,6 @@ main {
         }
     }
 
-    /* .hero-section {
-        display: flex;
-        padding: var(--Spacing-3-rem, 48px) var(--Spacing-5-rem, 80px) var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
-        flex-direction: column;
-        align-items: center;
-        align-self: stretch;
-        background: url(assets/img/background-dzienprofilaktyki-hero.png) lightgray 50% / cover no-repeat;
-        background-position: top;
-
-
-        .hero-container {
-            display: flex;
-            max-width: 1280px;
-            align-items: flex-start;
-            gap: 24px;
-
-
-            .hero-article {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                gap: var(--Spacing-1rem, 16px);
-                flex: 1 0 0;
-            }
-        }
-    } */
-
     .products-section {
         display: flex;
         padding: var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
@@ -1393,56 +1552,59 @@ main {
                 }
             }
 
+        }
 
-
+        .product-img {
+            display: none;
         }
     }
 }
 
 
 .product-offer {
-    #background-keeds-product {
-        background: url(assets/img/background-dzieci-hero.png) lightgray 50% / cover no-repeat;
-        background-position: top;
-
-    }
-
-    #background-parents-product {
-        background: url(assets/img/background-rodzice-hero.png) lightgray 50% / cover no-repeat;
-        background-position: top;
-
-    }
-
-    #background-teachers-product {
-        background: url(assets/img/background-kadrapedagogiczna-hero.png.png) lightgray 50% / cover;
-        background-position: top;
-    }
-
-    #background-corporate-product {
-        background: url(assets/img/background-autorskie-hero.png) lightgray 50% / cover no-repeat;
-        background-position: top;
-    }
-
-
     .hero-section {
-        height: var(--Height-14-rem, 224px);
-        padding: 0px var(--Spacing-5-rem, 80px);
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
+        align-items: flex-start;
         align-self: stretch;
+        overflow: hidden;
+        background: var(--Body-secondary-Backgorund);
 
-        .hero-container {
+        .hero-text-container {
             display: flex;
-            width: 100%;
-            max-width: 1280px;
-            gap: var(--spacing-15-rem, 24px);
+            margin-left: auto;
+            max-width: 640px;
+            padding: var(--Spacing-5-rem) 0px var(--Spacing-5-rem) var(--Spacing-5-rem);
+            flex-direction: column;
+            align-items: flex-start;
+            /* gap: var(--spacing-15-rem, 24px); */
+            gap: 80;
+            flex: 1 0 0;
 
-            .hero-article {
+            .text-container {
                 display: flex;
+                flex-direction: column;
+                justify-content: center;
                 align-items: flex-start;
-                flex: 1 0 0;
+                gap: var(--Spacing-1rem, 16px);
+                align-self: stretch;
+
+            }
+        }
+
+        .hero-img {
+            position: relative;
+            width: 50%;
+            /* height: 500px; */
+            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: auto;
+                object-fit: cover;
             }
         }
     }
@@ -1566,7 +1728,7 @@ main {
     }
 }
 
-.media-section {
+.desktop-contact-section {
     display: flex;
     max-width: 408px;
     flex-direction: column;
@@ -1575,86 +1737,14 @@ main {
     flex: 1 0 0;
     align-self: stretch;
 
-
-
-    .contact-section {
+    /* .contact-section {
         display: flex;
         padding: 0px var(--spacing-15-rem, 24px);
         flex-direction: column;
         align-items: flex-start;
         flex: 1 0 0;
         align-self: stretch;
-
-        .contact-card {
-            display: flex;
-            padding: var(--Spacing-1rem);
-            flex-direction: column;
-            align-items: flex-start;
-            gap: var(--Spacing-1rem);
-            align-self: stretch;
-            top: var(--Spacing-5-rem);
-            position: sticky;
-
-
-
-
-
-            border-radius: var(--Spacing-1rem, 16px);
-            background: var(--Body-Primary-Backgorund, #FFF);
-
-            /* Shadow/Small */
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-
-            /* Shadow/Small */
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-
-            .address-container {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--spacing-05-rem);
-                align-self: stretch;
-
-                .home-address {
-                    width: 24px;
-                    height: 48px;
-                    gap: 10px;
-                    background-color: #BB2901;
-                    border: #2900BD solid;
-                }
-
-
-                a {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: var(--Spacing-1rem, 16px);
-                    align-self: stretch;
-                    color: var(--Text-Body-secondary, #000);
-
-
-                    &:hover {
-                        color: var(--Nav-hover, #00BB29);
-                    }
-
-                    &:focus {
-                        color: var(--Nav-hover, #00BB29);
-                    }
-
-                    &:active {
-                        color: var(--Nav-activ, #007D1B);
-                    }
-
-                    &:disabled {
-                        color: var(--Nav-disabled, #A9E8B7);
-                    }
-                }
-
-
-            }
-
-
-        }
-    }
+    } */
 
     img {
         height: 448px;
@@ -1662,6 +1752,76 @@ main {
         border-radius: var(--Spacing-1rem, 16px);
 
     }
+}
+
+.mobile-contact-section {
+    display: none;
+}
+
+.contact-card {
+    display: flex;
+    padding: var(--Spacing-1rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-1rem);
+    align-self: stretch;
+    top: var(--Spacing-5-rem);
+    position: sticky;
+    border-radius: var(--Spacing-1rem, 16px);
+
+
+    /* Shadow/Small */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+
+    .address-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-05-rem);
+        align-self: stretch;
+
+        .home-address {
+            width: 24px;
+            height: 48px;
+            gap: 10px;
+            background-color: #BB2901;
+            border: #2900BD solid;
+        }
+
+
+        a {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--Spacing-1rem, 16px);
+            align-self: stretch;
+            color: var(--Text-Body-secondary, #000) !important;
+
+
+            &:hover {
+                color: var(--Nav-hover, #00BB29);
+            }
+
+            &:focus {
+                color: var(--Nav-hover, #00BB29);
+            }
+
+            &:active {
+                color: var(--Nav-activ, #007D1B);
+            }
+
+            &:disabled {
+                color: var(--Nav-disabled, #A9E8B7);
+            }
+        }
+
+
+    }
+
+
+}
+
+.media-sm {
+    display: none;
 }
 
 button {
@@ -1894,7 +2054,6 @@ h6 {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* 121.739% */
     letter-spacing: 0.115px;
     margin: 0px;
     margin: 0px;
@@ -1949,30 +2108,31 @@ p,
     &.text-color-tertiar {
         color: var(--Text-Body-tertiary, #2900BD);
     }
+}
 
-    .p2 {
-        /* Regular/Body/Body 2 */
-        font-family: Poppins;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.5px;
+.p2 {
+    /* Regular/Body/Body 2 */
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 153.846% */
+    letter-spacing: 0.5px;
 
-        &.medium {
-            font-weight: 500;
-        }
+    &.medium {
+        font-weight: 500;
+    }
 
-        &.semibold {
-            font-weight: 600;
-        }
+    &.semibold {
+        font-weight: 600;
+    }
 
-        &.bold {
-            font-weight: 700;
-        }
+    &.bold {
+        font-weight: 700;
     }
 }
+
 
 .hr {
     width: 100%;

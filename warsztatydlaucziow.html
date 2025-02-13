@@ -5,16 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Marcin Grabowski">
-    <meta name="keywords" content="---------- słowa kluczowe ------------------">
-    <meta name="description" content=" ----------   opis naszej strony  ------------------">
-    <title>EKSPERT Centrum profilaktyki
-        uzależnień</title>
+    <title>Centrum Profilaktyki Uzależnień EKSPERT</title>
+    <meta property="og:title" content="Centrum Profilaktyki Uzależnień EKSPERT" />
+    <meta property="og:description"
+        content="Profesjonalne warsztaty i szkolenia dla uczniów, rodziców oraz kadry pedagogicznej." />
+    <meta property="og:image"
+        content="https://expert-chi-beryl.vercel.app/assets/img/Ekspert-Centrum-Profilaktyki-Uzale%C5%BCnie%C5%84.jpg" />
+    <meta property="og:url" content="https://expert-chi-beryl.vercel.app/index.html" />
+    <meta property="og:type" content="website" />
     <link rel="icon" type="image/x-icon" href="assets/icon/Ekspert-favicon.svg">
-    <link rel="stylesheet" href="variables.css"> <!-- Plik z zmiennymi -->
+    <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <script src="sript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +27,7 @@
 </head>
 
 <body class="product-offer">
-    <header class="header">
+    <header class="main-header">
         <div class="menu-container">
             <div class="header-logo">
                 <a href="index.html">
@@ -31,22 +35,22 @@
                         alt="EkspertCentrumProfilaktykiUzależnień">
                 </a>
             </div>
-            <div class="topnav" id="myTopnav">
-                <div style="display: flex;">
-                    <a href="javascript:void(0);" class="navbtn icon material-icons" onclick="myFunction()">menu</a>
-                </div>
+            <nav class="topnav" id="myTopnav" role="navigation">
+                <button style="position: absolute;">
+                    <a href="javascript:void(0);" class="navbtn icon material-icons" aria-label="Otwórz menu"
+                        onclick="myFunction()">menu</a>
+                </button>
                 <div class="link-container">
                     <a class="navbtn" href="index.html">Strona główna</a>
                     <a class="navbtn" href="onas.html">O nas</a>
                     <div class="dropdown">
-                        <div class="dropbtn">Warsztaty i szkolenia
-                            <i class="material-icons">keyboard_arrow_down</i></a>
-                        </div>
+                        <button class="dropbtn navbtn">Warsztaty i szkolenia
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </button>
                         <div class="dropdown-content">
                             <a class="navbtn" href="warsztatydlaucziow.html">Warsztaty dla uczniów</a>
                             <a class="navbtn" href="szkoleniadlarodzicow.html">Szkolenia dla rodziców</a>
-                            <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla
-                                kadry
+                            <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla kadry
                                 pedagogicznej</a>
                             <a class="navbtn" href="rekomendowaneprogramy.html">Rekomendowane programy</a>
                         </div>
@@ -54,21 +58,24 @@
                     <a class="navbtn" href="dzienprofilaktyki.html">Dzień profilaktyki</a>
                     <a class="navbtn" href="kontakt.html">Kontakt</a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="hero-section" id="background-keeds-product">
-            <section class="hero-container">
-                <section class="hero-article">
-                    <header>
-                        <h4 class="medium header-color-primary">Warsztaty dla uczniów
-                        </h4>
-                    </header>
-                </section>
-                <div class="empty-container">
-                </div>
-            </section>
+        <section class="hero-section">
+            <article class="hero-text-container">
+                <header>
+                    <h4 class="medium header-color-primary">Warsztaty dla uczniów
+                    </h4>
+                </header>
+            </article>
+            <picture class="hero-img">
+                <source srcset="assets/img/bg-desktop-home-hero.webp" media="(min-width:1081px)" type="image/webp"
+                    class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
+                <source srcset="assets/img/bg-mobile-home-hero.webp" type="image/webp" class="img-mobile"
+                    alt="Nauczielka prowadząca kursy dla dzieci.">
+                <img src="assets/img/bg-desktop-home-hero.webp" alt="Nauczielka prowadząca kursy dla dzieci.">
+            </picture>
         </section>
         <section class="products-section">
             <article class="products-container">
@@ -183,6 +190,41 @@
                             <span class="badge">liceum, technikum</span>
                         </div>
                         <hr class="hr">
+                    </div>
+                    <div class="mobile-contact-section">
+                        <img src="assets/img/dzien-profilaktyki.jpg"
+                            alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
+                        <div class="contact-card" aria-label="Dane kontaktowe">
+                            <div class="address-container">
+                                <h6 class="medium text-color-secondary">Zapraszamy do kontaktu:</h6>
+                                <address aria-label="Dane kontaktowe">
+                                    <p>
+                                        <a href="mailto:ekspert.profilaktyka@gmail.com">
+                                            <span aria-hidden="true">
+                                                <i class="material-icons">mail</i>
+                                            </span> ekspert.profilaktyka@gmail.com
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+48511117620">
+                                            <span aria-hidden="true">
+                                                <i class="material-icons">call</i>
+                                            </span>+48 511 117 620
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+48517686587">
+                                            <span aria-hidden="true">
+                                                <i class="material-icons">call</i>
+                                            </span>+48 517 686 587
+                                        </a>
+                                    </p>
+                                </address>
+                            </div>
+                            <button onclick="location.href='kontakt.html'" type="button"
+                                class="btn button-primary">Formularz
+                                kontaktowy</button>
+                        </div>
                     </div>
                     <div class="product-card">
                         <div class="product-header">
@@ -374,6 +416,41 @@
                         </div>
                         <hr class="hr">
                     </div>
+                    <div class="mobile-contact-section">
+                        <img src="assets/img/dzien-profilaktyki.jpg"
+                            alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
+                        <div class="contact-card" aria-label="Dane kontaktowe">
+                            <div class="address-container">
+                                <h6 class="medium text-color-secondary">Zapraszamy do kontaktu:</h6>
+                                <address aria-label="Dane kontaktowe">
+                                    <p>
+                                        <a href="mailto:ekspert.profilaktyka@gmail.com">
+                                            <span aria-hidden="true">
+                                                <i class="material-icons">mail</i>
+                                            </span> ekspert.profilaktyka@gmail.com
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+48511117620">
+                                            <span aria-hidden="true">
+                                                <i class="material-icons">call</i>
+                                            </span>+48 511 117 620
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+48517686587">
+                                            <span aria-hidden="true">
+                                                <i class="material-icons">call</i>
+                                            </span>+48 517 686 587
+                                        </a>
+                                    </p>
+                                </address>
+                            </div>
+                            <button onclick="location.href='kontakt.html'" type="button"
+                                class="btn button-primary">Formularz
+                                kontaktowy</button>
+                        </div>
+                    </div>
                     <div class="product-card">
                         <div class="product-header">
                             <h6 class="medium">Warsztaty dla maluchów</h6>
@@ -490,44 +567,40 @@
                         <hr class="hr">
                     </div>
                 </div>
-                <div class="media-section">
-                    <img src="assets/img/parents.png"
+                <div class="desktop-contact-section">
+                    <img src="assets/img/dzien-profilaktyki.jpg"
                         alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
-                    <section class="contact-section" id="sticky-element">
-                        <div class="contact-card">
-                            <div class="address-container">
-                                <h6 class="medium text-color-secondary">Zapraszamy do kontaktu:</h6>
-                                <address aria-label="Dane kontaktowe">
-                                    <p>
-                                        <a href="mailto:ekspert.profilaktyka@gmail.com">
-                                            <span aria-hidden="true">
-                                                <i class="material-icons">mail</i>
-                                            </span> ekspert.profilaktyka@gmail.com
-                                        </a>
-                                    </p>
-                                    <p>
-                                        <a href="tel:+48511117620">
-                                            <span aria-hidden="true">
-                                                <i class="material-icons">call</i>
-                                            </span>+48 511 117 620
-                                        </a>
-                                    </p>
-                                    <p>
-                                        <a href="tel:+48517686587">
-                                            <span aria-hidden="true">
-                                                <i class="material-icons">call</i>
-                                            </span>+48 517 686 587
-                                        </a>
-                                    </p>
-                                </address>
-                            </div>
-                            <button onclick="location.href='kontakt.html'" type="button"
-                                class="btn button-primary">Formularz
-                                kontaktowy</button>
+                    <div class="contact-card" aria-label="Dane kontaktowe">
+                        <div class="address-container">
+                            <h6 class="medium text-color-secondary">Zapraszamy do kontaktu:</h6>
+                            <address aria-label="Dane kontaktowe">
+                                <p>
+                                    <a href="mailto:ekspert.profilaktyka@gmail.com">
+                                        <span aria-hidden="true">
+                                            <i class="material-icons">mail</i>
+                                        </span> ekspert.profilaktyka@gmail.com
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="tel:+48511117620">
+                                        <span aria-hidden="true">
+                                            <i class="material-icons">call</i>
+                                        </span>+48 511 117 620
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="tel:+48517686587">
+                                        <span aria-hidden="true">
+                                            <i class="material-icons">call</i>
+                                        </span>+48 517 686 587
+                                    </a>
+                                </p>
+                            </address>
                         </div>
-                    </section>
-                    <img src="assets/img/dzieci-w-szkole.png"
-                        alt="Dzień profilaktyki – warsztaty i szkolenia dla uczniów, nauczycieli i rodziców">
+                        <button onclick="location.href='kontakt.html'" type="button"
+                            class="btn button-primary">Formularz
+                            kontaktowy</button>
+                    </div>
                 </div>
             </article>
         </section>
@@ -594,18 +667,6 @@
 
 
     </footer>
-    <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
 </body>
 
 

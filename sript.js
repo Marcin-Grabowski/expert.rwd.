@@ -37,14 +37,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-// zmienia wielkosc liter z h4 na h6
-document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 640) { // Sprawdza szerokość ekranu
-        document.querySelectorAll("h4").forEach(h4 => {
-            let h6 = document.createElement("h6");
-            h6.innerHTML = h4.innerHTML; // Kopiuje zawartość
-            h6.className = h4.className; // Kopiuje klasy CSS
-            h4.replaceWith(h6); // Zamienia element w DOM
-        });
-    }
-});
