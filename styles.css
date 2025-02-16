@@ -430,36 +430,6 @@ main {
 @media screen and (max-width: 720px) {
     /* testowe */
 
-    .oferta-dzienprofilaktyki {
-        .hero-section {
-            flex-direction: column;
-            align-items: center;
-            align-self: stretch;
-
-            .hero-text-container {
-                padding: 32px 20px 8px !important;
-                max-width: none !important;
-            }
-
-            .hero-img {
-                height: var(--height-20-rem);
-            }
-
-            .img-desktop {
-                display: none;
-            }
-
-            .img-mobile {
-                display: block;
-                height: auto;
-            }
-        }
-
-        .products-list {
-            gap: var(--spacing-15-rem) !important;
-        }
-    }
-
     .contact {
         .main-contact {
             div {
@@ -1659,7 +1629,6 @@ p {
                 align-items: flex-start;
                 gap: var(--Spacing-1-rem, 16px);
                 align-self: stretch;
-
             }
         }
 
@@ -1783,7 +1752,7 @@ p {
                         display: flex;
                         align-items: flex-start;
                         align-content: flex-start;
-                        gap: var(--Spacing-5-rem);
+                        gap: 0px var(--Spacing-2-rem);
                         align-self: stretch;
                         flex-wrap: wrap;
 
@@ -1807,7 +1776,10 @@ p {
     gap: var(--Spacing-1-rem, 16px);
     flex: 1 0 0;
     align-self: stretch;
-
+    top: var(--Spacing-5-rem);
+    position: sticky;
+    height: 100vh;
+    x
     /* .contact-section {
         display: flex;
         padding: 0px var(--spacing-15-rem, 24px);
@@ -1817,11 +1789,14 @@ p {
         align-self: stretch;
     } */
 
+    .img-con {
+        height: 200px !important;
+    }
+
     img {
         height: 448px;
         align-self: stretch;
         border-radius: var(--Spacing-1-rem, 16px);
-
     }
 }
 
@@ -1981,8 +1956,6 @@ button {
         border: 2px solid var(--Button-secondary-disabled);
     }
 }
-
-/* .badge {} */
 
 h1 {
     /* Regular/Regular-H01 */
@@ -2245,9 +2218,3 @@ p,
 .header-color-secondary {
     color: var(--text-header-secondary, #000);
 }
-
-
-/* nowy header */
-/* * {
-    box-sizing: border-box;
-} */
