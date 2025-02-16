@@ -105,6 +105,11 @@ main {
         }
     }
 
+    .main-footer {
+        padding: var(--spacing-125-rem, 8px) var(--spacing-125-rem, 20px) !important;
+
+    }
+
     .home {
         .hero-section {
             flex-direction: column !important;
@@ -929,7 +934,7 @@ p {
     }
 
     .clients-logo-section {
-        display: flex;
+        display: none;
         padding: var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
         flex-direction: column;
         align-items: center;
