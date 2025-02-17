@@ -237,6 +237,7 @@ main {
                 /* width: 256px; */
                 height: 256px;
                 /* flex-shrink: 0; */
+                
             }
         }
 
@@ -1780,7 +1781,7 @@ p {
     align-self: stretch;
     top: var(--spacing-5-rem);
     position: sticky;
-    height: 100vh;
+    height: 100%;
 
     img {
         object-fit: cover;
