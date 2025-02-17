@@ -84,12 +84,14 @@ main {
             .dropdown {
                 float: none;
 
+                a {
+                    margin-left: 16px;
+                }
 
                 .dropbtn {
                     display: block;
                     width: 100%;
                     text-align: left;
-                    gap: 20px;
 
                     i {
                         position: absolute;
@@ -139,15 +141,6 @@ main {
                 height: auto;
             }
         }
-/* 
-        border-radius: var(--Spacing-1rem, 16px);
-        width: 100%;
-        height: 226.5px;
-        min-width: 332px;
-        object-fit: cover;
-        object-position: top;
-        flex: 1 0 0; 
-        */
 
         .content-section {
             padding: var(--spacing-2-rem) var(--spacing-125-rem) !important;
@@ -497,10 +490,6 @@ p {
         text-decoration: none;
         font-size: 16px;
         letter-spacing: 0.16px;
-
-        #kontakt {
-            z-index: 1000;
-        }
 
 
         &:hover {
