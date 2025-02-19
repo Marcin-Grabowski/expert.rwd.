@@ -285,8 +285,6 @@ main {
 
             .products-list {
                 display: flex !important;
-
-                border: solid 1px red;
                 min-width: none !important;
 
             }
@@ -335,8 +333,6 @@ main {
 
             .products-list {
                 display: flex !important;
-
-                border: solid 1px red;
                 min-width: none !important;
 
             }
