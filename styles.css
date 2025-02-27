@@ -42,6 +42,8 @@ main {
         .topnav .navbtn,
         .dropdown .dropbtn {
             display: none;
+
+
         }
 
         .topnav a.icon {
@@ -50,7 +52,7 @@ main {
             right: 0;
             top: 0;
             font-size: 24px;
-
+            font-family: 'Material Icons' !important;
         }
 
         .topnav.responsive {
@@ -513,7 +515,7 @@ main {
             right: 0;
             top: 0;
             font-size: 24px;
-
+            font-family: 'Material Icons' !important;
         }
 
         .topnav.responsive {
@@ -994,7 +996,9 @@ main {
         gap: var(--spacing-05-rem);
         color: var(--Nav-default, #000);
         text-decoration: none;
-        font-size: 16px; */
+        font-size: 16px;
+        letter-spacing: 0.16px; */
+
         display: inline-flex;
         float: left;
         padding: var(--spacing-075-rem) var(--spacing-1-rem);
