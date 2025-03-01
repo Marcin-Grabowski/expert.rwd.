@@ -1942,7 +1942,7 @@ main {
 }
 
 
-.oferta-dzienprofilaktyki {
+/* .oferta-dzienprofilaktyki {
     .hero-section {
         display: flex;
         justify-content: center;
@@ -2016,8 +2016,7 @@ main {
         .hero-img {
             position: relative;
             width: 50%;
-            /* height: 500px; */
-            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+
 
 
             img {
@@ -2118,10 +2117,11 @@ main {
             display: none;
         }
     }
-}
+} */
 
 
-.product-offer {
+.product-offer,
+.oferta-dzienprofilaktyki {
     .hero-section {
         display: flex;
         justify-content: center;
