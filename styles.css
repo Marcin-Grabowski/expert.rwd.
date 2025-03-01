@@ -1130,6 +1130,7 @@ main {
                         align-items: flex-start;
                         gap: var(--spacing-1-rem, 8px);
                         align-self: stretch;
+                        height: auto;
 
                         .fiber-size {
                             display: flex;
@@ -1188,7 +1189,7 @@ main {
                         display: flex;
                         align-items: flex-start;
                         align-content: flex-start;
-                        gap: var(--spacing-075-rem) var(--spacing-3-rem, 48px);
+                        gap: var(--spacing-075-rem);
                         align-self: stretch;
                         flex-wrap: wrap;
                         padding-left: 0px;
@@ -1198,13 +1199,14 @@ main {
                             display: flex;
                             height: 24px;
                             min-width: 319px;
-                            /* max-width: var(--Width-20-rem, 320px); */
                             justify-content: left;
                             align-items: flex-start;
                             align-content: flex-start;
                             gap: 8px var(--spacing-05-rem);
                             flex: 1 0 0;
-                            /* flex-wrap: wrap; */
+                            min-height: 24px;
+                            height: auto;
+                            line-height: 1.4;
 
                             .fiber-size {
                                 display: flex;
