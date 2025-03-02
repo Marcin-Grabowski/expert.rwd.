@@ -103,7 +103,7 @@ main {
 
                 .dropdown-content {
                     position: relative;
-                    margin-left: var();
+                    margin-left: var(--spacing-1-rem);
                 }
             }
         }
