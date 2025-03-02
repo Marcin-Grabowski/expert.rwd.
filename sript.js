@@ -1,19 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // skrtpy dotyczacy nabar 
-    const menu = document.getElementById("myTopnav");
-    const icon = document.querySelector(".icon");
+function myFunction(element) {
+    var x = document.getElementById("myTopnav");
 
-    icon.addEventListener("click", function (event) {
-        menu.classList.toggle("responsive");
-        event.stopPropagation(); // Zapobiega natychmiastowemu zamknięciu
-    });
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        element.innerHTML = "close"; // zmień ikonę na "close"
+        element.setAttribute("aria-label", "Zamknij menu"); // zaktualizuj tekst dla czytników ekranu
+    } else {
+        x.className = "topnav";
+        element.innerHTML = "menu"; // przywróć ikonę "menu"
+        element.setAttribute("aria-label", "Otwórz menu"); // przywróć tekst dla czytników ekranu
+    }
+}
 
-    document.addEventListener("click", function (event) {
-        if (!menu.contains(event.target) && !icon.contains(event.target)) {
-            menu.classList.remove("responsive");
-        }
-    });
-});
 // skrypt dotuczacu dropdowne w menu 
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownButtons = document.querySelectorAll(".dropdown-btn");

@@ -28,6 +28,14 @@
 
 <body class="home">
     <header class="main-header">
+        <div class="contact-info-container">
+            <a href="tel:+48123456789" class="contact-item">
+                <i class="material-icons">phone</i> +48 123 456 789
+            </a>
+            <a href="mailto:kontakt@expert.pl" class="contact-item">
+                <i class="material-icons">email</i> kontakt@expert.pl
+            </a>
+        </div>
         <div class="menu-container">
             <div class="header-logo">
                 <a href="index.html">
@@ -38,9 +46,8 @@
             <nav class="topnav" id="myTopnav" role="navigation">
                 <button style="position: absolute;">
                     <a href="javascript:void(0);" class="navbtn icon material-icons" aria-label="Otwórz menu"
-                        onclick="myFunction()">menu</a>
+                        onclick="myFunction(this)">menu</a>
                 </button>
-
                 <div class="link-container">
                     <a class="navbtn" href="index.html">Strona główna</a>
                     <a class="navbtn" href="onas.html">O nas</a>
