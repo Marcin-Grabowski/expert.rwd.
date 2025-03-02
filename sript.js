@@ -12,26 +12,26 @@ function myFunction(element) {
     }
 }
 
-// skrypt dotuczacu dropdowne w menu 
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+// // skrypt dotuczacu dropdowne w menu 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const dropdownButtons = document.querySelectorAll(".dropdown-btn");
 
-    dropdownButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            let dropdownContent = this.nextElementSibling;
+//     dropdownButtons.forEach(button => {
+//         button.addEventListener("click", function () {
+//             let dropdownContent = this.nextElementSibling;
 
-            // Jeśli już otwarte, zamknij
-            if (dropdownContent.classList.contains("open")) {
-                dropdownContent.classList.remove("open");
-            } else {
-                // Zamknij inne dropdowny
-                document.querySelectorAll(".dropdown-content").forEach(menu => {
-                    menu.classList.remove("open");
-                });
+//             // Jeśli już otwarte, zamknij
+//             if (dropdownContent.classList.contains("open")) {
+//                 dropdownContent.classList.remove("open");
+//             } else {
+//                 // Zamknij inne dropdowny
+//                 document.querySelectorAll(".dropdown-content").forEach(menu => {
+//                     menu.classList.remove("open");
+//                 });
 
-                // Otwórz tylko kliknięty
-                dropdownContent.classList.add("open");
-            }
-        });
-    });
-});
+//                 // Otwórz tylko kliknięty
+//                 dropdownContent.classList.add("open");
+//             }
+//         });
+//     });
+// });
