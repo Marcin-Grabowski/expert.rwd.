@@ -1,10 +1,10 @@
 :root {
     --font-size-base: 16px;
-    --Body-primary-Backgorund: #FFF;
-    --Body-secondary-Backgorund: #2A2A2D;
+    --Body-primary-Background: #FFF;
+    --Body-secondary-Background: #2A2A2D;
 
     --body-nav-background: #FFFFFF;
-    --nav-backgorund: #FFFFFF;
+    --nav-Background: #FFFFFF;
     --nav-default: #000000;
     --nav-button-hover-text: #00BB29;
     --nav-button-focus-text: #00BB29;
@@ -71,7 +71,7 @@
 
 
     --Text-footer: #DEDEDF;
-    --Body-Footer-Backgorund: #2A2A2D;
+    --Body-Footer-Background: #2A2A2D;
 
     --spacing-025-rem: 4px;
     --spacing-05-rem: 8px;

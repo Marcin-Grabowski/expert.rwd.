@@ -7,24 +7,17 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: var(--color-text-default);
-    background: var(--Body-primary-Backgorund);
+    background: var(--Body-primary-Background);
 
     ul {
         padding: 0;
-        margin: 0px
+        margin: 0px;
     }
 
     a {
         text-decoration: none;
         color: inherit;
     }
-
-    /* 
-    .empty-container {
-        max-width: 640px;
-        flex: 1 0 0;
-        align-self: stretch;
-    } */
 }
 
 main {
@@ -32,7 +25,7 @@ main {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background: var(--Body-primary-Backgorund);
+    background: var(--Body-primary-Background);
 }
 
 @media screen and (max-width: 1080px) {
@@ -193,10 +186,7 @@ main {
                     display: none;
                 }
 
-                .img-tablet {
-                    display: block;
-                    width: 100%;
-                }
+
 
                 .img-mobile {
                     display: none;
@@ -601,10 +591,6 @@ main {
             display: none;
         }
 
-        .img-tablet {
-            display: block;
-            width: 100%;
-        }
 
         .img-mobile {
             display: none;
@@ -657,10 +643,6 @@ main {
                     display: none;
                 }
 
-                .img-tablet {
-                    display: block;
-                    width: 100%;
-                }
 
                 .img-mobile {
                     display: none;
@@ -896,7 +878,7 @@ main {
                 align-self: none;
 
                 .contact-card {
-                    padding: 0px !important;
+                    /* padding: 0px !important; */
                     position: static !important;
                 }
 
@@ -1084,7 +1066,7 @@ main {
     flex-direction: column;
     align-items: center;
     align-self: stretch;
-    background: var(--Body-Footer-Backgorund, #2A2A2D);
+    background: var(--Body-Footer-Background, #2A2A2D);
 
 
     .footer-container {
@@ -1206,7 +1188,7 @@ main {
         align-items: flex-start;
         align-self: stretch;
         overflow: hidden;
-        background: var(--Body-secondary-Backgorund);
+        background: var(--Body-secondary-Background);
 
         .hero-text-container {
             display: flex;
@@ -1378,7 +1360,7 @@ main {
         align-items: flex-start;
         align-self: stretch;
         overflow: hidden;
-        background: var(--Body-secondary-Backgorund);
+        background: var(--Body-secondary-Background);
 
         .about-text-container {
             display: flex;
@@ -1413,7 +1395,7 @@ main {
         .about-img {
             position: relative;
             width: 50%;
-            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+            /* background: var(--Body-Secondary-Background, #2A2A2D); */
 
 
             img {
@@ -1472,7 +1454,7 @@ main {
         align-items: flex-start;
         align-self: stretch;
         overflow: hidden;
-        background: var(--Body-secondary-Backgorund);
+        background: var(--Body-secondary-Background);
 
         .hero-text-container {
             display: flex;
@@ -1541,7 +1523,7 @@ main {
             position: relative;
             width: 50%;
             /* height: 500px; */
-            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+            /* background: var(--Body-Secondary-Background, #2A2A2D); */
 
 
             img {
@@ -1647,7 +1629,7 @@ main {
         align-items: flex-start;
         align-self: stretch;
         overflow: hidden;
-        background: var(--Body-secondary-Backgorund);
+        background: var(--Body-secondary-Background);
 
         .hero-text-container {
             display: flex;
@@ -1673,7 +1655,7 @@ main {
             position: relative;
             width: 50%;
             /* height: 500px; */
-            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+            /* background: var(--Body-Secondary-Background, #2A2A2D); */
 
 
             img {
@@ -1931,7 +1913,7 @@ main {
         align-items: flex-start;
         align-self: stretch;
         overflow: hidden;
-        background: var(--Body-secondary-Backgorund);
+        background: var(--Body-secondary-Background);
 
         .hero-text-container {
             display: flex;
@@ -2110,7 +2092,7 @@ main {
         align-items: flex-start;
         align-self: stretch;
         overflow: hidden;
-        background: var(--Body-secondary-Backgorund);
+        background: var(--Body-secondary-Background);
 
         .hero-text-container {
             display: flex;
@@ -2136,7 +2118,7 @@ main {
             position: relative;
             width: 50%;
             /* height: 500px; */
-            /* background: var(--Body-Secondary-Backgorund, #2A2A2D); */
+            /* background: var(--Body-Secondary-Background, #2A2A2D); */
 
 
             img {
@@ -2674,9 +2656,6 @@ p,
     margin: 0px;
 }
 
-/* #hr-margin {
-    margin-top: 16px;
-} */
 
 .none-element {
     display: none;
