@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="sript.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,7 +48,7 @@
                             <i class="material-icons">keyboard_arrow_down</i>
                         </button>
                         <div class="dropdown-content">
-                            <a class="navbtn" href="warsztatydlaucziow.html">Warsztaty dla uczniów</a>
+                            <a class="navbtn" href="warsztatydlauczniow.html">Warsztaty dla uczniów</a>
                             <a class="navbtn" href="szkoleniadlarodzicow.html">Szkolenia dla rodziców</a>
                             <a class="navbtn" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla kadry
                                 pedagogicznej</a>
@@ -66,7 +66,7 @@
             <article class="hero-text-container">
                 <div class="text-container">
                     <header>
-                        <h4 class="medium primar header-color-primary">Kompletne szkolenia i warsztaty</h4>
+                        <h4 class="medium primary header-color-primary">Kompletne szkolenia i warsztaty</h4>
                     </header>
                     <p>
                         Nasze warsztaty i szkolenia w sposób całościowy ujmują problemy z jakimi każdego dnia
@@ -117,10 +117,11 @@
             </article>
             <picture class="hero-img">
                 <source srcset="assets/img/bg-desktop-home-hero.png" media="(min-width:1081px)" type="image/webp"
-                    class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
+                    class="img-desktop">
                 <source srcset="assets/img/bg-mobile-home-hero.png" media="(max-width:1080px)" type="image/webp"
-                    class="img-mobile" alt="Nauczielka prowadząca kursy dla dzieci.">
-                <img src="assets/img/bg-desktop-home-hero.png" alt="Nauczielka prowadząca kursy dla dzieci.">
+                    class="img-mobile">
+                <img src="assets/img/bg-desktop-home-hero.png" alt="Nauczycielka prowadząca kursy dla dzieci."
+                    loading="lazy">
             </picture>
         </section>
         <section class="content-section">
@@ -129,9 +130,9 @@
                     młodzieży</h4>
             </header>
             <div class="cards-container">
-                <a class="card-link" href="warsztatydlaucziow.html">
+                <a class="card-link" href="warsztatydlauczniow.html">
                     <div class="card-img">
-                        <img src="assets/img/keeds.svg" alt="Peofilatyka dla dzieci">
+                        <img src="assets/img/keeds.svg" alt="Profilaktyka dla dzieci">
                     </div>
                     <div class="card-body">
                         <header>
@@ -209,10 +210,10 @@
             </article>
             <picture class="about-img">
                 <source srcset="assets/img/bg-desktop-home-onas.png" media="(min-width:1081px)" type="image/png"
-                    class="img-desktop" alt="Nauczielka prowadząca kursy dla dzieci.">
+                    class="img-desktop">
                 <source srcset="assets/img/bg-mobile-home-onas.png" media="(max-width:1080px)" type="image/png"
-                    class="img-mobile" alt="Nauczielka prowadząca kursy dla dzieci.">
-                <img src="assets/img/assets/img/bg-desktop-home-onas.png" alt="Dzieci w szkole.">
+                    class="img-mobile">
+                <img src="assets/img/bg-desktop-home-onas.png" alt="Dzieci w szkole." loading="lazy">
             </picture>
         </section>
         <section class="clients-logo-section">
@@ -253,7 +254,7 @@
                         </div>
                         <ul>
                             <li>
-                                <a href="index.html" class="p2">Strona głowna</a>
+                                <a href="index.html" class="p2">Strona główna</a>
                             </li>
                             <li>
                                 <a href="onas.html" class="p2">O nas</a>
@@ -262,7 +263,8 @@
                                 <a href="dzienprofilaktyki.html" class="p2">Dzień Profilaktyki</a>
                             </li>
                             <li>
-                                <a href="kontakt.html" class="p2">Komtakt</a>
+                                <a href="kontakt.html" class="p2">Kontakt</a>
+
                             </li>
                         </ul>
                     </div>
@@ -272,7 +274,7 @@
                         </div>
                         <ul>
                             <li>
-                                <a href="warsztatydlaucziow.html" class="p2">Dla uczniów</a>
+                                <a href="warsztatydlauczniow.html" class="p2">Dla uczniów</a>
                             </li>
                             <li>
                                 <a href="szkoleniadlarodzicow.html" class="p2">Dla rodziców</a>
@@ -298,8 +300,11 @@
                     </span>
                 </p>
                 <p>
-                    <span>Projekt i wykonanie: <a href="linkedin.com/in/marcin-robert-grabowski/">Marcin
-                            Grabowski</a></span>
+                    <span><a href="https://www.linkedin.com/in/marcin-robert-grabowski/" target="_blank"
+                            rel="noopener noreferrer">
+                            Realizacja: Marcin Grabowski
+                        </a>
+                    </span>
                 </p>
             </div>
         </div>

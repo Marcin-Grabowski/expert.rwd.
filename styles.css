@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: var(--color-text-default);
-    background: var(--Body-Primary-Backgorund);
+    background: var(--Body-primary-Backgorund);
 
     ul {
         padding: 0;
@@ -32,7 +32,7 @@ main {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background: var(--Body-Primary-Backgorund);
+    background: var(--Body-primary-Backgorund);
 }
 
 @media screen and (max-width: 1080px) {
