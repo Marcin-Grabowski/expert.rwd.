@@ -31,6 +31,8 @@ main {
 @media screen and (max-width: 1080px) {
     .main-header {
         padding: var(--spacing-05-rem) var(--spacing-125-rem) !important;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
 
         .topnav .navbtn,
         .dropdown .dropbtn {
@@ -76,6 +78,7 @@ main {
                 padding-left: 8px !important;
                 overflow: hidden;
                 border-radius: 0px 0px 16px 16px;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
             }
 
             .dropdown {
@@ -488,7 +491,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .main-header {
+    /* .main-header {
         padding: var(--spacing-05-rem) var(--spacing-125-rem) !important;
 
         .topnav .navbtn,
@@ -557,14 +560,14 @@ main {
                 }
             }
         }
-    }
+    } */
 
-    .main-footer {
+    /* .main-footer {
         padding: var(--spacing-125-rem) var(--spacing-125-rem) !important;
 
-    }
+    } */
 
-    .hero-img,
+    /* .hero-img,
     .about-img {
         position: relative;
         width: 100% !important;
@@ -599,198 +602,12 @@ main {
         .left-postion {
             align-items: flex-start;
         }
-    }
-
-    .home {
-        .hero-section {
-            flex-direction: column !important;
-            align-items: center;
-            align-self: stretch;
-
-            .hero-text-container {
-                padding: 32px 20px 20px 20px !important;
-                max-width: none !important;
-            }
-
-            .hero-list {
-                max-width: unset;
-                align-self: flex-start;
-            }
-
-            .hero-img {
-                position: relative;
-                width: 100% !important;
-                min-height: 400px;
-                overflow: hidden;
-
-                picture {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-
-                img,
-                source {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    min-height: 400px;
-                }
-
-                .img-desktop {
-                    display: none;
-                }
+    } */
 
 
-                .img-mobile {
-                    display: none;
-                }
-            }
-        }
 
-        .content-section {
-            padding: var(--spacing-2-rem) var(--spacing-125-rem) !important;
 
-            .about-image {
-                width: 100%;
-                height: 280px !important;
-            }
-        }
 
-        .about-section {
-            flex-direction: column;
-            align-items: center;
-            align-self: stretch;
-
-            .about-text-container {
-                padding: 32px 20px 4px !important;
-                max-width: none !important;
-            }
-
-            .about-img {
-                height: var(--height-20-rem);
-            }
-
-            .img-desktop {
-                display: none;
-            }
-
-            .img-mobile {
-                display: block;
-                height: auto;
-            }
-        }
-
-        .clients-logo-section {
-            padding: 32px 20px 32px !important;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: var(--spacing-15-rem);
-            align-self: stretch;
-
-            .clients-container {
-                flex-direction: column;
-                /* Ustawienie elementów w pionie */
-                align-items: center;
-                /* Wyśrodkowanie elementów */
-                justify-content: center;
-                /* Wyśrodkowanie względem osi Y */
-                min-width: auto;
-                /* Dostosowanie szerokości */
-                /* height: 100vh; */
-                /* Pełna wysokość ekranu */
-            }
-        }
-    }
-
-    .about {
-        .hero-section {
-            flex-direction: column;
-            align-items: center;
-            align-self: stretch;
-
-            .hero-text-container {
-                padding: 32px 20px 8px !important;
-                max-width: none !important;
-            }
-
-            .hero-img {
-                height: var(--height-20-rem);
-            }
-
-            .img-desktop {
-                display: none;
-            }
-
-            .img-mobile {
-                display: block;
-                height: auto;
-            }
-        }
-
-        .info-section {
-            padding: var(--spacing-2-rem) var(--spacing-125-rem) !important;
-        }
-
-        .img-mobile {
-            display: flex !important;
-            /* width: 100%; */
-            justify-content: center;
-            align-items: center;
-
-            img {
-                /* width: 256px; */
-                height: 256px;
-                /* flex-shrink: 0; */
-
-            }
-        }
-
-        .img-desktop {
-            display: none !important;
-            width: 322px;
-            align-items: flex-end;
-            align-self: stretch;
-
-        }
-    }
-
-    .oferta-dzienprofilaktyki {
-        .hero-section {
-            flex-direction: column;
-            align-items: center;
-            align-self: stretch;
-
-            .hero-text-container {
-                padding: 32px 20px 8px !important;
-                max-width: none !important;
-            }
-        }
-
-        .products-section {
-            display: flex !important;
-            padding: var(--spacing-2-rem) var(--spacing-125-rem) !important;
-            min-width: none !important;
-
-            min-width: none;
-            max-width: none;
-
-            .products-list {
-                display: flex !important;
-                min-width: none !important;
-
-            }
-
-            .product-card {
-                display: flex !important;
-
-                min-width: none !important;
-            }
-        }
-    }
 
     .product-offer {
         .hero-section {
@@ -908,7 +725,7 @@ main {
         }
     }
 
-    .mobile-contact-section {
+    /* .mobile-contact-section {
         display: flex !important;
         align-items: flex-start;
         align-content: flex-start;
@@ -931,11 +748,11 @@ main {
             min-width: 320px;
             flex: 1 0 0;
         }
-    }
+    } */
 
-    .desktop-contact-section {
+    /* .desktop-contact-section {
         display: none !important;
-    }
+    } */
 }
 
 
@@ -952,6 +769,7 @@ main {
     padding: var(--spacing-05-rem) var(--spacing-5-rem);
     background: var(--Body-Nav-Background, #FFF);
     z-index: 1000;
+
 
 
     .navbtn,
