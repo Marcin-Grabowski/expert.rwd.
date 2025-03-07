@@ -424,7 +424,7 @@ main {
             .material-icons {
                 transform: rotate(180deg);
                 transition: transform 0.3s ease;
-                color: var(--nav-btn-hover);
+                color: var(--nav-btn-hover) !important;
             }
         }
 
@@ -435,6 +435,16 @@ main {
                 transform: rotate(180deg);
                 transition: transform 0.3s ease;
                 color: var(--nav-btn-focus);
+            }
+        }
+
+        &:active {
+            color: var(--nav-btn-active);
+
+            .material-icons {
+                transform: rotate(180deg);
+                transition: transform 0.3s ease;
+                color: var(--nav-btn-active);
             }
         }
 
