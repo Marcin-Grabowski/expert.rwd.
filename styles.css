@@ -16,7 +16,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: inherit !important;
+    /* color: inherit !important; */
 }
 
 main {
@@ -48,18 +48,18 @@ main {
             top: 0;
             font-size: 24px;
             font-family: 'Material Icons' !important;
-            color: var(--nav-def);
+            color: var(--nav-def) !important;
 
             &:hover {
-                color: var(--nav-btn-hover);
+                color: var(--nav-btn-hover) !important;
             }
 
             &:active {
-                color: var(--nav-btn-active);
+                color: var(--nav-btn-active) !important;
             }
 
             &:disabled {
-                color: var(--nav-btn-dis);
+                color: var(--nav-btn-dis) !important;
             }
         }
 
@@ -416,8 +416,6 @@ main {
     padding: var(--spacing-05-rem) var(--spacing-5-rem);
     background: var(--nav-Background);
     z-index: 1000;
-
-
 
     .navbtn,
     .dropbtn {
