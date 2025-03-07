@@ -418,7 +418,7 @@ main {
 
         a {
             text-decoration: none;
-            color: inherit !important;
+            color: black !important;
         }
 
         &:hover {
