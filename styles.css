@@ -189,7 +189,7 @@ main {
             }
 
             header {
-                text-align: left !important;
+                text-align: left;
             }
         }
 
@@ -740,7 +740,7 @@ main {
         padding: var(--spacing-4-rem) var(--spacing-5-rem);
         margin: 0 auto;
         flex-direction: column;
-        align-items: left;
+        align-items: center;
         gap: var(--spacing-2-rem, 32px);
         align-self: stretch;
 
