@@ -48,7 +48,19 @@ main {
             top: 0;
             font-size: 24px;
             font-family: 'Material Icons' !important;
-            color: #BB2901;
+            color: var(--nav-def);
+
+            &:hover {
+                color: var(--nav-btn-hover);
+            }
+
+            &:active {
+                color: var(--nav-btn-active);
+            }
+
+            &:disabled {
+                color: var(--nav-btn-dis);
+            }
         }
 
         .topnav.responsive {
