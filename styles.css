@@ -1652,8 +1652,8 @@ button {
     align-items: center;
     gap: var(--spacing-05-rem);
     border-radius: var(--spacing-15-rem, 24px);
-    background-color: var(--Button-primary-def);
-    color: var(--Button-primary-text);
+    background-color: var(--btn-primary-def);
+    color: var(--btn-primary-text);
     white-space: nowrap;
 
     border: none;
@@ -1665,19 +1665,19 @@ button {
     line-height: 150%;
 
     &:hover {
-        background-color: var(--Button-primary-hover);
+        background-color: var(--btn-primary-hover);
     }
 
     &:focus {
-        background-color: var(--Button-primary-focus);
+        background-color: var(--btn-primary-focus);
     }
 
     &:active {
-        background-color: var(--Button-primary-active);
+        background-color: var(--btn-primary-active);
     }
 
     &:disabled {
-        background-color: var(--Button-primary-disabled);
+        background-color: var(--btn-primary-disabled);
     }
 }
 
@@ -1693,32 +1693,32 @@ button {
 }
 
 .btn-secondary {
-    color: var(--Button-secondary-def, #00BB29);
+    color: var(--btn-secondary-def, #00BB29);
     background: none;
     border: 2px solid var(--btn-sec-out-def);
 
     &:hover {
-        color: var(--Button-secondary-hover, #009C22);
+        color: var(--btn-secondary-hover, #009C22);
         background: none;
         border: 2px solid var(--btn-sec-out-hov);
     }
 
     &:focus {
-        color: var(--Button-secondary-focus, #009C22);
+        color: var(--btn-secondary-focus, #009C22);
         background: none;
         border: 2px solid var(--btn-sec-out-foc);
     }
 
     &:active {
-        color: var(--Button-secondary-outline-active #007D1B);
+        color: var(--btn-secondary-outline-active #007D1B);
         background: none;
         border: 2px solid var(--Butto--btn-sec-out-act);
     }
 
     &:disabled {
-        color: var(--Button-secondary-text);
+        color: var(--btn-secondary-text);
         background: none;
-        border: 2px solid var(--Button-secondary-dis);
+        border: 2px solid var(--btn-secondary-dis);
     }
 }
 

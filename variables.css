@@ -24,13 +24,13 @@
     --icons-color-secondary: #00BB29;
     --icons-color-tertiar: #FFFFFF;
 
-    --Button-primary-def: #00BB29;
-    --Button-primary-hover: #009C22;
-    --Button-primary-focus: #009C22;
-    --Button-primary-active: #007D1B;
-    --Button-primary-dis: #A9E8B7;
-    --Button-primary-text: #000000;
-    --Button-primary-text-dis: #00BB29;
+    --btn-primary-def: #00BB29;
+    --btn-primary-hover: #009C22;
+    --btn-primary-focus: #009C22;
+    --btn-primary-active: #007D1B;
+    --btn-primary-dis: #A9E8B7;
+    --btn-primary-text: #000000;
+    --btn-primary-text-dis: #00BB29;
 
     --btn-sec-out-def: #00BB29;
     --btn-sec-out-hov: #009C22;
