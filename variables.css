@@ -3,19 +3,18 @@
     --Body-primary-Background: #FFF;
     --Body-secondary-Background: #2A2A2D;
 
-    --body-nav-background: #FFFFFF;
     --nav-Background: #FFFFFF;
-    --nav-default: #000000;
-    --nav-button-hover-text: #00BB29;
-    --nav-button-focus-text: #00BB29;
-    --nav-button-activ-text: #007D1B;
-    --nav-button-disabled-text: #A9E8B7;
+    --nav-def: #000000;
+    --nav-btn-hover: #00BB29;
+    --nav-btn-focus: #00BB29;
+    --nav-btn-active: #007D1B;
+    --nav-btn-dis: #A9E8B7;
 
     --Text-Header-primary: #00BB29;
     --Text-Header-secondary: #000000;
     --Text-Body-primary: #FFFFFF;
     --Text-Body-secondary: #000000;
-    --Text-Body-tertiar: #2900BD;
+    --Text-Body-tertiary: #2900BD;
 
 
     --Text-Headline-primary: #00BB29;
@@ -25,42 +24,42 @@
     --icons-color-secondary: #00BB29;
     --icons-color-tertiar: #FFFFFF;
 
-    --Button-primary-default: #00BB29;
+    --Button-primary-def: #00BB29;
     --Button-primary-hover: #009C22;
     --Button-primary-focus: #009C22;
-    --Button-primary-activ: #007D1B;
-    --Button-primary-disabled: #A9E8B7;
+    --Button-primary-active: #007D1B;
+    --Button-primary-dis: #A9E8B7;
     --Button-primary-text: #000000;
-    --Button-primary-text-disabled: #00BB29;
+    --Button-primary-text-dis: #00BB29;
 
-    --Button-secondary-outline-default: #00BB29;
-    --Button-secondary-outline-hover: #009C22;
-    --Button-secondary-outline-focus: #009C22;
-    --Button-secondary-outline-activ: #007D1B;
-    --Button-secondary-outline-disabled: #A9E8B7;
-    --Button-secondary-text: #00BB29;
+    --btn-sec-out-def: #00BB29;
+    --btn-sec-out-hov: #009C22;
+    --btn-sec-out-foc: #009C22;
+    --btn-sec-out-act: #007D1B;
+    --btn-sec-out-dis: #A9E8B7;
+    --btn-sec-text: #00BB29;
 
 
 
-    --Link-header-default: #000000;
-    --Link-footer-default: #DEDEDF;
-    --Link-default: #00BB29;
+    --Link-header-def: #000000;
+    --Link-footer-def: #DEDEDF;
+    --Link-def: #00BB29;
     --Link-hover: #007D1B;
     --Link-focus: #007D1B;
-    --Link-activ: #003F0E;
-    --Link-disabled: #7FDD94;
-    --Link-footer-disabled: #7F7F82;
+    --Link-active: #003F0E;
+    --Link-dis: #7FDD94;
+    --Link-footer-dis: #7F7F82;
 
-    --Checkboxes-default: #000000;
+    --Checkboxes-def: #000000;
     --Checkboxes-hover: #00BB29;
     --Checkboxes-focus: #00BB29;
     --Checkboxes-aciv: #009C22;
-    --Checkboxes-disabled: #000000;
+    --Checkboxes-dis: #000000;
 
-    --text-field-default: #000000;
+    --text-field-def: #000000;
     --text-field-hover: #00BB29;
     --text-field-error: #BB2901;
-    --text-field-disabled: #7F7F82;
+    --text-field-dis: #7F7F82;
 
 
 
