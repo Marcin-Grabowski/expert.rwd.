@@ -48,6 +48,7 @@ main {
             top: 0;
             font-size: 24px;
             font-family: 'Material Icons' !important;
+            color: #BB2901;
         }
 
         .topnav.responsive {
