@@ -54,13 +54,12 @@ main {
             position: absolute;
             width: 100%;
             left: 0;
-            /* top: 100%; */
             height: auto;
-            z-index: 999;
+            z-index: 9999;
             overflow: visible;
 
             a.icon {
-                position: absolute;
+                position: fixed;
                 z-index: 999;
                 right: 20px;
                 top: 8px;
