@@ -416,6 +416,12 @@ main {
         font: 400 16px/24px Poppins;
         letter-spacing: -0.09px;
 
+        &:default {
+            .material-icons {
+                color: var(--nav-def);
+
+            }
+        }
 
         &:hover {
             color: var(--nav-btn-hover);
@@ -440,18 +446,6 @@ main {
         &:disabled {
             color: var(--nav-btn-dis);
         }
-
-        /* 
-        .navbtn:active:focus,
-        .dropbtn:active:focus {
-            color: initial;
-        }
-
-        .navbtn:active:focus .material-icons,
-        .dropbtn:active:focus .material-icons {
-            transform: rotate(180deg);
-            transition: transform 0.3s ease;
-        } */
     }
 
 
