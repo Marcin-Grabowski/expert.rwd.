@@ -45,7 +45,6 @@ main {
             top: 0;
             font-size: 24px;
             font-family: 'Material Icons' !important;
-            color: #000;
         }
 
         .topnav.responsive {
@@ -454,65 +453,65 @@ main {
 
 
     }
-}
 
-.menu-container {
-    display: flex;
-    max-width: 1280px;
-    justify-content: space-between;
-    flex: 1 0 0;
 
-    .header-logo {
+    .menu-container {
         display: flex;
+        max-width: 1280px;
+        justify-content: space-between;
+        flex: 1 0 0;
 
-        a {
-            width: 199.048px;
-            height: var(--height-3-rem);
+        .header-logo {
+            display: flex;
+
+            a {
+                width: 199.048px;
+                height: var(--height-3-rem);
+            }
         }
     }
-}
 
-.topnav {
-    overflow: hidden;
-    float: right;
-
-    .icon {
-        display: none;
-    }
-
-    .dropdown {
-        float: left;
+    .topnav {
         overflow: hidden;
+        float: right;
 
-        .dropdown-content {
+        .icon {
             display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 1;
-            background: var(--nav-Background);
-            border-radius: 0px 0px 16px 16px;
+        }
 
-            .navbtn {
-                float: none;
+        .dropdown {
+            float: left;
+            overflow: hidden;
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                min-width: 160px;
+                z-index: 1;
+                background: var(--nav-Background);
+                border-radius: 0px 0px 16px 16px;
+
+                .navbtn {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+            }
+
+            #dropbtn {
                 display: block;
-                text-align: left;
             }
         }
 
-        #dropbtn {
+        .dropdown:hover .dropdown-content {
             display: block;
         }
-    }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropbtn {
-        float: none !important;
+        .dropbtn {
+            float: none !important;
+        }
     }
 }
-
 
 .main-footer {
     display: flex;
