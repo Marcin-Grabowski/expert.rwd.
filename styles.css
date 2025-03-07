@@ -404,6 +404,11 @@ main {
     .desktop-contact-section {
         display: none !important;
     }
+
+    .badge {
+        letter-spacing: 0.05em;
+        font-size: 14px;
+    }
 }
 
 .main-header {
@@ -1685,7 +1690,6 @@ button {
     border-radius: var(--spacing-15-rem, 24px);
     background: var(--Color-Secondary-100, #DBD4F4);
     color: var(--Text-Body-tertiary);
-    font-size: 14px;
 }
 
 .btn-secondary {
