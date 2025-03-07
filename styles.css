@@ -16,7 +16,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black !important;
+    color: inherit !important;
 }
 
 main {
@@ -416,10 +416,6 @@ main {
         font: 400 16px/24px Poppins;
         letter-spacing: -0.09px;
 
-        a {
-            text-decoration: none;
-            color: black !important;
-        }
 
         &:hover {
             color: var(--nav-btn-hover);
@@ -444,9 +440,9 @@ main {
         &:disabled {
             color: var(--nav-btn-dis);
         }
+
+
     }
-
-
 }
 
 .menu-container {
