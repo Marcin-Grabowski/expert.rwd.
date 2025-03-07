@@ -61,6 +61,7 @@ main {
                 z-index: 999;
                 right: 20px;
                 top: 8px;
+                color: black;
             }
 
             .navbtn {
