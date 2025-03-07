@@ -1308,7 +1308,7 @@ main {
                             content: 'check';
                             font-family: 'Material Icons';
                             font-size: 18px;
-                            color: var(--icon-color-primary);
+                            color: var(--icons-color-primary);
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -1921,7 +1921,7 @@ p,
     font-size: 24px;
     width: var(--spacing-15-rem, 24px);
     height: var(--spacing-15-rem, 24px) !important;
-    color: var(--icon-color-primary, #000000);
+    color: var(--icons-color-primary, #000000);
 
 
     &#icons-color-secondary {
