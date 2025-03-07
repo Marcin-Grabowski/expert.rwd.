@@ -418,7 +418,7 @@ main {
 
         &:default {
             .material-icons {
-                color: var(--nav-def);
+                color: var(--nav-def) !important;
 
             }
         }
