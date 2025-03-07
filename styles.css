@@ -416,11 +416,9 @@ main {
         font: 400 16px/24px Poppins;
         letter-spacing: -0.09px;
 
-        &:default {
-            .material-icons {
-                color: var(--nav-def) !important;
-
-            }
+        a {
+            text-decoration: none;
+            color: inherit !important;
         }
 
         &:hover {
