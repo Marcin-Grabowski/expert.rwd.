@@ -424,6 +424,10 @@ main {
         letter-spacing: 0.05em;
         font-size: 14px;
     }
+
+    .desktop-break {
+        display: block;
+    }
 }
 
 .main-header {
@@ -1559,6 +1563,10 @@ main {
             }
         }
     }
+
+    #parents-title {
+        font-size: 32px;
+    }
 }
 
 .desktop-contact-section {
@@ -1733,6 +1741,10 @@ button {
         background: none;
         border: 2px solid var(--btn-secondary-dis);
     }
+}
+
+.desktop-break {
+    display: none;
 }
 
 h1 {
