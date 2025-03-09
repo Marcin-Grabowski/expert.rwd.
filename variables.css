@@ -43,10 +43,10 @@
 
     --Link-header-def: #000000;
     --Link-footer-def: #DEDEDF;
-    --Link-def: #00BB29;
-    --Link-hover: #007D1B;
-    --Link-focus: #007D1B;
-    --Link-active: #003F0E;
+    --Link-defoult: #000000;
+    --Link-hover: #00BB29;
+    --Link-focus: #00BB29;
+    --Link-active: #007D1B;
     --Link-dis: #7FDD94;
     --Link-footer-dis: #7F7F82;
 

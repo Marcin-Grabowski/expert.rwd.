@@ -157,9 +157,6 @@ main {
             display: none;
         }
 
-        .left-postion {
-            align-items: flex-start;
-        }
     }
 
     .home {
@@ -348,6 +345,24 @@ main {
                 .contact-card {
                     padding: 0px !important;
                     position: static !important;
+
+                    a {
+                        &:hover {
+                            color: var(--btn-primary-hover) !important;
+                        }
+
+                        &:focus {
+                            color: var(--btn-primary-focus) !important;
+                        }
+
+                        &:active {
+                            color: var(--btn-primary-active);
+                        }
+
+                        &:disabled {
+                            color: var(--btn-primary-disabled);
+                        }
+                    }
                 }
 
                 .main-contact {
@@ -481,6 +496,7 @@ main {
 
     .active {
         color: var(--nav-btn-active);
+        font-weight: 600;
     }
 
 
@@ -1162,6 +1178,31 @@ main {
                 box-shadow: none;
                 padding-left: 0px;
 
+                a {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: var(--spacing-1-rem);
+                    align-self: stretch;
+                    color: #000000;
+
+
+                    &:hover {
+                        color: var(--Link-hover);
+                    }
+
+                    &:focus {
+                        color: var(--Link-focus);
+                    }
+
+                    &:active {
+                        color: var(--Link-active);
+                    }
+
+                    &:disabled {
+                        color: var(--link-dis);
+                    }
+                }
+
                 .address {
                     display: flex;
                     flex-direction: column;
@@ -1177,32 +1218,7 @@ main {
                         align-self: stretch;
                     }
 
-                    a {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: var(--spacing-1-rem);
-                        align-self: stretch;
-                        color: var(--Text-Body-secondary);
-
-
-                        &:hover {
-                            color: var(--Nav-hover);
-                        }
-
-                        &:focus {
-                            color: var(--Nav-hover);
-                        }
-
-                        &:active {
-                            color: var(--Nav-active);
-                        }
-
-                        &:disabled {
-                            color: var(--Nav-dis);
-                        }
-                    }
                 }
-
 
             }
 
@@ -1630,9 +1646,6 @@ main {
 
 }
 
-.media-sm {
-    display: none;
-}
 
 button {
     margin: 0;
@@ -1880,8 +1893,7 @@ h6 {
     }
 }
 
-p,
-#strong {
+p {
     /* Regular/Body/Body 1 */
     font-family: Poppins;
     font-size: 16px;
@@ -1904,9 +1916,6 @@ p,
         font-weight: 700;
     }
 
-    /* &.aa {
-        word-break: keep-all;
-    } */
 
     &.text-color-secondary {
         color: var(--Text-Body-secondary);
@@ -1948,9 +1957,6 @@ p,
 }
 
 
-.none-element {
-    display: none;
-}
 
 .material-icons {
     display: grid;
