@@ -1525,7 +1525,7 @@ main {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        gap: var(--spacing-05rem);
+                        gap: var(--spacing-125-rem);
                         align-self: stretch;
                     }
 
