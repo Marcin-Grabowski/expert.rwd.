@@ -426,7 +426,7 @@ main {
     }
 
     .desktop-break {
-        display: block;
+        display: none;
     }
 }
 
@@ -1527,7 +1527,7 @@ main {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        gap: var(--spacing-125-rem);
+                        gap: var(--spacing-1-rem);
                         align-self: stretch;
                     }
 
@@ -1569,7 +1569,13 @@ main {
     #parents-title {
         font-size: 32px;
     }
+
+    #title-reducer {
+        font-size: 22px;
+    }
 }
+
+
 
 .desktop-contact-section {
     display: flex;
@@ -1746,7 +1752,7 @@ button {
 }
 
 .desktop-break {
-    display: none;
+    display: block;
 }
 
 h1 {
@@ -1858,6 +1864,10 @@ h4 {
 
 }
 
+h4.title-reducer {
+    font-size: 32px;
+}
+
 h5 {
 
     /* Regular/Regular-H05 */
@@ -1907,6 +1917,10 @@ h6 {
     }
 }
 
+h6.title-reducer {
+    font-size: 22px;
+}
+
 p {
     /* Regular/Body/Body 1 */
     font-family: Poppins;
@@ -1938,6 +1952,10 @@ p {
     &.text-color-tertiar {
         color: var(--Text-Body-tertiary, #2900BD);
     }
+}
+
+p.title-reducer {
+    font-size: 15px;
 }
 
 .p2 {
