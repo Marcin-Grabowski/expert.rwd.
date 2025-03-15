@@ -1640,23 +1640,23 @@ main {
             align-items: flex-start;
             gap: var(--spacing-1-rem);
             align-self: stretch;
-            color: var(--Text-Body-secondary, #000) !important;
+            color: var(--Text-Body-secondary, #000);
 
 
             &:hover {
-                color: var(--Nav-hover);
+                color: var(--nav-btn-hover);
             }
 
             &:focus {
-                color: var(--Nav-hover);
+                color: var(--nav-btn-focus);
             }
 
             &:active {
-                color: var(--Nav-active);
+                color: var(--Nav-btn-active);
             }
 
             &:disabled {
-                color: var(--Nav-disabled);
+                color: var(--Nav-btn-disabled);
             }
         }
 
@@ -2001,7 +2001,7 @@ p.title-reducer {
     font-size: 24px;
     width: var(--spacing-15-rem, 24px);
     height: var(--spacing-15-rem, 24px) !important;
-    color: var(--icons-color-primary, #000000);
+    /* color: var(--icons-color-primary, #000000); */
 
 
     &#icons-color-secondary {
