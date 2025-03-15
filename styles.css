@@ -1739,7 +1739,7 @@ button {
     &:focus {
         color: var(--btn-secondary-focus, #009C22);
         background: none;
-        border: 2px solid var(--btn-sec-out-foc);
+        border: 2px solid var(--btn-sec-out-foc) !important;
     }
 
     &:active {

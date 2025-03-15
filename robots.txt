@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Wskazanie na plik sitemap
+Sitemap: https://expert-rwd.vercel.app/sitemap.xml
+
+# Czas odroczenia między kolejnymi żądaniami (w sekundach)
+Crawl-delay: 10
