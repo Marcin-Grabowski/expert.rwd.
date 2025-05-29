@@ -505,7 +505,7 @@ main {
     .active {
         color: var(--nav-btn-active);
         font-weight: 600;
-        letter-spacing: 0,1px
+        letter-spacing: 0, 1px
     }
 
 
@@ -1261,6 +1261,7 @@ main {
                     margin-bottom: 16px;
                     outline: none;
                     align-self: stretch;
+                    background-color: var(--Body-primary-Background);
 
                     &:hover {
                         box-shadow: inset 0 0 0 1px var(--text-field-hover, #00BB29);
