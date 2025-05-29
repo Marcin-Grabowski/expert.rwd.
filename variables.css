@@ -1,9 +1,9 @@
 :root {
     --font-size-base: 16px;
-    --Body-primary-Background: #FFF;
+    --Body-primary-Background: #FAFAFC;
     --Body-secondary-Background: #2A2A2D;
 
-    --nav-Background: #FFFFFF;
+    --nav-Background: #FAFAFC;
     --nav-def: #000000;
     --nav-btn-hover: #00BB29;
     --nav-btn-focus: #00BB29;
@@ -11,10 +11,11 @@
     --nav-btn-dis: #A9E8B7;
 
     --Text-Header-primary: #00BB29;
-    --Text-Header-secondary: #000000;
-    --Text-Body-primary: #FFFFFF;
+    --Text-Header-secondary: #1D1D1F;
+    --Text-Body-primary: #F5F5F7;
     --Text-Body-secondary: #000000;
     --Text-Body-tertiary: #2900BD;
+
 
 
     --Text-Headline-primary: #00BB29;
@@ -26,6 +27,7 @@
 
     --btn-primary-def: #00BB29;
     --btn-primary-hover: #009C22;
+    --text-interactive: #ffffffe6;
     --btn-primary-focus: #009C22;
     --btn-primary-active: #007D1B;
     --btn-primary-dis: #A9E8B7;
@@ -62,15 +64,6 @@
     --text-field-dis: #7F7F82;
 
 
-
-
-    /* 
-    --home-hero-background: url(assets/img/backgournd-home-hero.jpg) lightgray 50% / cover no-repeat;
-    --home-about-us-background: url(assets/img/backgournd-home-about-us.jpg) lightgray 50% / cover no-repeat; */
-
-
-    --Text-footer: #DEDEDF;
-    --Body-Footer-Background: #2A2A2D;
 
     --spacing-025-rem: 4px;
     --spacing-05-rem: 8px;
