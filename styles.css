@@ -1507,18 +1507,18 @@ main {
                         align-self: stretch;
 
                         ul {
+                            list-style: none;
+                            padding: 0;
                             display: flex;
                             flex-direction: column;
-                            align-items: flex-start;
                             gap: var(--spacing-05-rem);
                             align-self: stretch;
-                            list-style-position: inside !important;
-
 
                             li {
+
                                 display: flex;
                                 align-items: flex-start;
-                                gap: 4px;
+                                gap: 8px;
                                 align-self: stretch;
 
                                 .fiber-size {
@@ -1526,6 +1526,8 @@ main {
                                     justify-content: flex-start;
                                     align-items: center;
                                     font-size: 16px;
+                                    flex-shrink: 0;
+                                    line-height: 1.2;
                                 }
                             }
                         }
